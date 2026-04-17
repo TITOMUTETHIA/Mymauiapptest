@@ -4,11 +4,39 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MyMauiApp"
-    Title="MyMauiApp">
+    Title="MyMauiApp"
+    FlyoutBehavior="Flyout">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="CadetBlue" HeightRequest="150">
+            <Label Text="My Assets Tracker"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Home">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="About Us">
+        <ShellContent
+            Title="About Us"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Route="AboutPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Contact Us">
+        <ShellContent
+            Title="Contact Us"
+            ContentTemplate="{DataTemplate local:ContactPage}"
+            Route="ContactPage" />
+    </FlyoutItem>
 
 </Shell>
