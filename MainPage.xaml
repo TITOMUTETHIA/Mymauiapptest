@@ -10,29 +10,42 @@
         <viewmodels:MainViewModel />
     </ContentPage.BindingContext>
 
-    <CollectionView ItemsSource="{Binding Assets}"
-                    SelectionMode="None"
-                    Margin="20">
-        <CollectionView.ItemTemplate>
-            <DataTemplate x:DataType="models:Asset">
-                <Grid Padding="10" ColumnDefinitions="Auto, *">
-                    <Image Source="{Binding Icon}" 
-                           WidthRequest="40" 
-                           HeightRequest="40" 
-                           VerticalOptions="Center" />
-                    
-                    <VerticalStackLayout Grid.Column="1" Margin="15,0,0,0" VerticalOptions="Center">
-                        <Label Text="{Binding Name}" 
-                               FontAttributes="Bold" 
-                               FontSize="18" />
-                        <Label Text="{Binding Description}" 
-                               TextColor="Gray" />
-                        <Label Text="{Binding Value, StringFormat='{0:C}'}" 
-                               TextColor="Green" 
-                               FontAttributes="Bold" />
-                    </VerticalStackLayout>
-                </Grid>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+    <VerticalStackLayout>
+        <CollectionView ItemsSource="{Binding Assets}"
+                        SelectionMode="None"
+                        Margin="20"
+                        VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Asset">
+                    <Grid Padding="10" ColumnDefinitions="Auto, *">
+                        <Image Source="{Binding Icon}" 
+                               WidthRequest="40" 
+                               HeightRequest="40" 
+                               VerticalOptions="Center" />
+                        
+                        <VerticalStackLayout Grid.Column="1" Margin="15,0,0,0" VerticalOptions="Center">
+                            <Label Text="{Binding Name}" 
+                                   FontAttributes="Bold" 
+                                   FontSize="18" />
+                            <Label Text="{Binding Description}" 
+                                   TextColor="Gray" />
+                            <Label Text="{Binding Value, StringFormat='{0:C}'}" 
+                                   TextColor="Green" 
+                                   FontAttributes="Bold" />
+                        </VerticalStackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Text="About Us"
+                Clicked="OnAboutButtonClicked"
+                Margin="20,0,20,10"
+                HorizontalOptions="FillAndExpand" />
+
+        <Button Text="Contact Us"
+                Clicked="OnContactButtonClicked"
+                Margin="20,0,20,20"
+                HorizontalOptions="FillAndExpand" />
+    </VerticalStackLayout>
 </ContentPage>
