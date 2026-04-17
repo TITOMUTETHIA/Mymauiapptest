@@ -39,4 +39,17 @@
             Route="ContactPage" />
     </FlyoutItem>
 
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout Padding="10">
+            <Button Text="Logout"
+                    Clicked="OnLogoutClicked"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    CornerRadius="8"
+                    HeightRequest="50"
+                    FontSize="16"
+                    FontAttributes="Bold" />
+        </VerticalStackLayout>
+    </Shell.FlyoutFooter>
+
 </Shell>
