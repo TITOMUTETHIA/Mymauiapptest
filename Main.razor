@@ -1,0 +1,26 @@
+@page "/"
+@namespace MyMauiApp.Shared
+@inject ICameraService CameraService
+
+<h1>Hello, .NET MAUI Blazor!</h1>
+
+<p>Welcome to your new hybrid app running on .NET 10.</p>
+
+<button class="btn btn-secondary" @onclick="CaptureImage">Take Photo</button>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<p class="counter-display">Current count: @currentCount</p>
+
+@if (!string.IsNullOrEmpty(imagePath))
+{
+    <p>Captured: @imagePath</p>
+}
+
+@code {
+    private int currentCount = 0;
+    private string? imagePath;
+
+    private void IncrementCount() => currentCount++;
+
+    private async Task CaptureImage() => imagePath = await CameraService.TakePhotoAsync();
+}

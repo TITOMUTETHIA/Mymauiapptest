@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿﻿using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Components.WebView.Maui;
+using MyMauiApp.Shared;
 
 namespace MyMauiApp;
 
@@ -15,7 +17,11 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
+		builder.Services.AddMauiBlazorWebView();
+		builder.Services.AddSingleton<ICameraService, MauiCameraService>();
+
 #if DEBUG
+		builder.Services.AddBlazorWebViewDeveloperTools();
 		builder.Logging.AddDebug();
 #endif
 

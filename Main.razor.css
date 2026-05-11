@@ -1,0 +1,10 @@
+h1 {
+    color: #512BD4;
+    font-family: 'OpenSansSemibold';
+}
+
+.counter-display {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}

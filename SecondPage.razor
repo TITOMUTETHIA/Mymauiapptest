@@ -1,0 +1,14 @@
+@namespace MyMauiApp.Shared
+@page "/second"
+@inject NavigationManager NavManager
+
+<h1>Second Page</h1>
+<p>This is a separate route handled by Blazor.</p>
+
+<button class="btn btn-secondary" @onclick="GoBack">Back to Home</button>
+
+@code {
+    private void GoBack() {
+        NavManager.NavigateTo("/");
+    }
+}
