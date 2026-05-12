@@ -1,5 +1,6 @@
 @page "/marketplace"
 @using MyMauiApp.Shared.Services
+@using MyMauiApp.Shared.Models
 @inject MyMauiApp.Shared.Services.ICartService CartService
 
 <div class="marketplace">
@@ -27,34 +28,51 @@
                     <p class="author">by @asset.Author</p>
                     <div class="price-row">
                         <span class="price">$@asset.Price</span>
-                        <button class="btn-buy" @onclick="() => AddToCart(asset.Name)">Add to Cart</button>
+                        <button class="btn-preview" @onclick="() => PreviewModel(asset)">View 3D</button>
+                        <button class="btn-buy" @onclick="() => AddToCart(asset)">Add to Cart</button>
                     </div>
                 </div>
             </div>
         }
     </section>
+
+    @if (selectedAssetForPreview != null)
+    {
+        <div class="modal-overlay" @onclick="ClosePreview">
+            <div class="modal-content" @onclick:stopPropagation="true">
+                <button class="close-btn" @onclick="ClosePreview">&times;</button>
+                <model-viewer src="@selectedAssetForPreview.ModelUrl"
+                              poster="@selectedAssetForPreview.ThumbnailUrl"
+                              alt="A 3D model of @selectedAssetForPreview.Name"
+                              auto-rotate camera-controls
+                              shadow-intensity="1"
+                              ar>
+                </model-viewer>
+                <div class="modal-footer">
+                    <h3>@selectedAssetForPreview.Name</h3>
+                    <button class="btn-buy" @onclick="() => AddToCart(selectedAssetForPreview)">Add to Cart $@selectedAssetForPreview.Price</button>
+                </div>
+            </div>
+        </div>
+    }
 </div>
 
 @code {
-    private async Task AddToCart(string name)
+    private Asset? selectedAssetForPreview;
+
+    private async Task AddToCart(Asset asset)
     {
-        await CartService.AddToCartAsync(name);
+        await CartService.AddToCartAsync(asset);
     }
 
-    private List<AssetItem> FeaturedAssets = new()
+    private void PreviewModel(Asset asset) => selectedAssetForPreview = asset;
+    private void ClosePreview() => selectedAssetForPreview = null;
+
+    private List<Asset> FeaturedAssets = new()
     {
-        new AssetItem { Name = "Cyberpunk Street Kit", Category = "Environment", Price = 45.00m, Author = "NeonArchitect", ThumbnailUrl = "https://via.placeholder.com/300x200?text=Cyberpunk+Kit" },
-        new AssetItem { Name = "Stylized Knight Rigged", Category = "Characters", Price = 29.99m, Author = "Champs3D", ThumbnailUrl = "https://via.placeholder.com/300x200?text=Knight+Model" },
-        new AssetItem { Name = "Ultimate Sci-Fi Weapon Pack", Category = "Props", Price = 15.50m, Author = "ArsenalZero", ThumbnailUrl = "https://via.placeholder.com/300x200?text=Weapons+Pack" },
-        new AssetItem { Name = "Modular Dungeon Master", Category = "Environment", Price = 59.00m, Author = "DungeonCrafter", ThumbnailUrl = "https://via.placeholder.com/300x200?text=Dungeon+Kit" }
+        new Asset { Name = "Cyberpunk Street Kit", Category = "Environment", Price = 45.00m, Author = "NeonArchitect", ThumbnailUrl = "https://via.placeholder.com/300x200?text=Cyberpunk+Kit", ModelUrl="https://modelviewer.dev/shared-assets/models/Astronaut.glb" },
+        new Asset { Name = "Stylized Knight Rigged", Category = "Characters", Price = 29.99m, Author = "Champs3D", ThumbnailUrl = "https://via.placeholder.com/300x200?text=Knight+Model", ModelUrl="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb" },
+        new Asset { Name = "Ultimate Sci-Fi Weapon Pack", Category = "Props", Price = 15.50m, Author = "ArsenalZero", ThumbnailUrl = "https://via.placeholder.com/300x200?text=Weapons+Pack", ModelUrl="https://modelviewer.dev/shared-assets/models/Astronaut.glb" },
+        new Asset { Name = "Modular Dungeon Master", Category = "Environment", Price = 59.00m, Author = "DungeonCrafter", ThumbnailUrl = "https://via.placeholder.com/300x200?text=Dungeon+Kit", ModelUrl="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb" }
     };
-
-    public class AssetItem
-    {
-        public string Name { get; set; } = string.Empty;
-        public string Category { get; set; } = string.Empty;
-        public decimal Price { get; set; }
-        public string Author { get; set; } = string.Empty;
-        public string ThumbnailUrl { get; set; } = string.Empty;
-    }
 }

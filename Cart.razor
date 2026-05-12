@@ -1,6 +1,7 @@
 @page "/cart"
 @namespace MyMauiApp.Shared.Components
 @using MyMauiApp.Shared.Services
+@using MyMauiApp.Shared.Models
 @using System.Linq
 @inject ICartService CartService
 @implements IDisposable
@@ -23,7 +24,11 @@
                 @foreach (var item in CartService.Items)
                 {
                     <div class="cart-item">
-                        <span class="item-name">@item</span>
+                        <div class="item-details">
+                            <img src="@item.ThumbnailUrl" class="cart-thumb" />
+                            <span class="item-name">@item.Name</span>
+                            <span class="item-price">$@item.Price</span>
+                        </div>
                         <button class="btn-remove" @onclick="() => RemoveFromCart(item)">Remove</button>
                     </div>
                 }
@@ -43,9 +48,9 @@
         CartService.OnChange += StateHasChanged;
     }
 
-    private async Task RemoveFromCart(string name)
+    private async Task RemoveFromCart(Asset asset)
     {
-        await CartService.RemoveFromCartAsync(name);
+        await CartService.RemoveFromCartAsync(asset);
     }
 
     public void Dispose() => CartService.OnChange -= StateHasChanged;

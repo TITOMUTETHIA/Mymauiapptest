@@ -11,11 +11,11 @@ public class MainViewModel
     {
         Assets = new ObservableCollection<Asset>
         {
-            new Asset { Name = "Bitcoin", Description = "The first cryptocurrency", Value = 64230.50m, Icon = "dotnet_bot.png" },
-            new Asset { Name = "Ethereum", Description = "Smart contract platform", Value = 3450.20m, Icon = "dotnet_bot.png" },
-            new Asset { Name = "Solana", Description = "High-speed blockchain", Value = 145.75m, Icon = "dotnet_bot.png" },
-            new Asset { Name = "Cardano", Description = "Proof-of-stake platform", Value = 0.45m, Icon = "dotnet_bot.png" },
-            new Asset { Name = "Polkadot", Description = "Multi-chain network", Value = 7.10m, Icon = "dotnet_bot.png" }
+            new Asset { Name = "Bitcoin", Description = "The first cryptocurrency", Price = 64230.50m, ThumbnailUrl = "dotnet_bot.png" },
+            new Asset { Name = "Ethereum", Description = "Smart contract platform", Price = 3450.20m, ThumbnailUrl = "dotnet_bot.png" },
+            new Asset { Name = "Solana", Description = "High-speed blockchain", Price = 145.75m, ThumbnailUrl = "dotnet_bot.png" },
+            new Asset { Name = "Cardano", Description = "Proof-of-stake platform", Price = 0.45m, ThumbnailUrl = "dotnet_bot.png" },
+            new Asset { Name = "Polkadot", Description = "Multi-chain network", Price = 7.10m, ThumbnailUrl = "dotnet_bot.png" }
         };
     }
 }
