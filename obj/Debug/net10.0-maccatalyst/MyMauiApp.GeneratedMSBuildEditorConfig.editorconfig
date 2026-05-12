@@ -1,16 +1,16 @@
 is_global = true
-build_property.TargetFramework = net10.0
+build_property.TargetFramework = net10.0-maccatalyst
 build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v10.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 
-build_property.InvariantGlobalization = false
+build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = MyMauiApp.Web
-build_property.RootNamespace = MyMauiApp.Web
+build_property.RootNamespace = MyMauiApp
+build_property.RootNamespace = MyMauiApp
 build_property.ProjectDir = C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\tito\MAUI\Mymauiapptest\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
@@ -32,12 +32,12 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ADMIN/OneDrive - Chrome Partners/Desktop/tito/MAUI/Mymauiapptest/Main.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFpbi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-2scs3y59te
+build_metadata.AdditionalFiles.CssScope = b-3duhewdkdt
 
 [C:/Users/ADMIN/OneDrive - Chrome Partners/Desktop/tito/MAUI/Mymauiapptest/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-het4dj26p3
+build_metadata.AdditionalFiles.CssScope = b-xgg06ooioy
 
 [C:/Users/ADMIN/OneDrive - Chrome Partners/Desktop/tito/MAUI/Mymauiapptest/Marketplace.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFya2V0cGxhY2UucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-ui9imd4ms0
+build_metadata.AdditionalFiles.CssScope = b-6u8hgjg0to

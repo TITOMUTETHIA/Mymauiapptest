@@ -1,0 +1,92 @@
+.marketplace {
+    background-color: #0f111a;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1a1c2c 0%, #4a148c 100%);
+    text-align: center;
+    border-bottom: 2px solid #512BD4;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #ac92fa;
+}
+
+.search-bar {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 12px 20px;
+    width: 400px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.asset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.asset-card {
+    background: #1e1e2d;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid #333;
+}
+
+.asset-card:hover {
+    transform: translateY(-10px);
+    border-color: #512BD4;
+}
+
+.asset-preview img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.asset-info {
+    padding: 15px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.btn-buy {
+    background-color: #512BD4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
