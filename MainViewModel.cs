@@ -1,7 +1,7 @@
 using System.Collections.ObjectModel;
-using MyMauiApp.Models;
+using MyMauiApp.Shared.Models;
 
-namespace MyMauiApp.ViewModels;
+namespace MyMauiApp.ViewModels; // Assuming this ViewModel is MAUI-specific
 
 public class MainViewModel
 {

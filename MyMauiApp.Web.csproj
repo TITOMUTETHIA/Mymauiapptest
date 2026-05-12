@@ -13,6 +13,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="10.0.0-preview.1.25122.6" PrivateAssets="all" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Remove="Services\**" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="MyMauiApp.Shared.csproj" />
   </ItemGroup>
 </Project>

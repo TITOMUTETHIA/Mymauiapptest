@@ -1,13 +1,23 @@
-@namespace MyMauiApp.Shared
+@namespace MyMauiApp.Shared.Components
 @inherits LayoutComponentBase
+@inject MyMauiApp.Shared.Services.ICartService CartService
 
 <header>
     <nav>
         <NavLink href="/" Match="NavLinkMatch.All">Home</NavLink> | 
-        <NavLink href="/second">Second Page</NavLink>
+
+        <NavLink href="/marketplace">Marketplace</NavLink> | 
+        <NavLink href="/cart"><CartIcon /></NavLink>
     </nav>
 </header>
 
 <main>
     @Body
 </main>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await CartService.InitializeAsync();
+    }
+}

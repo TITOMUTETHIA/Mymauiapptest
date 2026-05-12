@@ -1,4 +1,4 @@
-namespace MyMauiApp.Models;
+namespace MyMauiApp.Shared.Models;
 
 public class Asset
 {

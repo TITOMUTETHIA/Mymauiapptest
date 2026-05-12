@@ -1,4 +1,4 @@
-namespace MyMauiApp.Shared;
+namespace MyMauiApp.Shared.Services;
 
 public interface ICameraService
 {

@@ -1,6 +1,6 @@
-using MyMauiApp.Shared;
+using MyMauiApp.Shared.Services; // Updated namespace for ICameraService
 
-namespace MyMauiApp;
+namespace MyMauiApp.Services;
 
 public class MauiCameraService : ICameraService
 {

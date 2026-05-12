@@ -1,0 +1,23 @@
+@using MyMauiApp.Shared.Services
+@inject MyMauiApp.Shared.Services.ICartService CartService
+@implements IDisposable
+
+<div class="cart-icon-container">
+    <span class="oi oi-cart" aria-hidden="true"></span>
+    @if (CartService.GetCount() > 0)
+    {
+        <span class="cart-badge">@CartService.GetCount()</span>
+    }
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        CartService.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        CartService.OnChange -= StateHasChanged;
+    }
+}
