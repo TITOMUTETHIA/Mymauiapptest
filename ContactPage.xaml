@@ -2,33 +2,28 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyMauiApp.ContactPage"
+             xmlns:local="clr-namespace:MyMauiApp"
              Title="Contact Us">
     <ScrollView>
         <VerticalStackLayout Spacing="10" Padding="20">
-            <Label Text="Contact MyMauiApp Support"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center" />
-            <Label Text="Have questions or feedback? We'd love to hear from you!"
-                   FontSize="16"
-                   HorizontalOptions="Center"
-                   HorizontalTextAlignment="Center" />
-            <Label Text="Email: support@mymauiapp.com"
-                   FontSize="16"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center" />
-            <Label Text="Phone: +1 (555) 123-4567"
-                   FontSize="16"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center" />
-            <Label Text="Address: 123 MAUI Street, App City, MA 98765"
-                   FontSize="16"
-                   HorizontalOptions="Center"
-                   HorizontalTextAlignment="Center" />
-            <Label Text="Operating Hours: Monday - Friday, 9 AM - 5 PM (EST)"
-                   FontSize="14"
-                   TextColor="Gray"
-                   HorizontalOptions="Center" />
+            <local:ContactPageHeader
+                HeaderTitle="Contact MyMauiApp Support"
+                HeaderSubtitle="Have questions or feedback? We'd love to hear from you!" />
+
+            <local:ContactDetailItem
+                DetailTitle="Email:"
+                DetailValue="support@mymauiapp.com" />
+
+            <local:ContactDetailItem
+                DetailTitle="Phone:"
+                DetailValue="+1 (555) 123-4567" />
+
+            <local:ContactDetailItem
+                DetailTitle="Address:"
+                DetailValue="123 MAUI Street, App City, MA 98765" />
+
+            <local:OperatingHoursDisplay
+                HoursText="Operating Hours: Monday - Friday, 9 AM - 5 PM (EST)" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
