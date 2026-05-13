@@ -227,5 +227,37 @@ model-viewer {
     border-radius: 6px;
     cursor: pointer;
 }
+
+/* Loading Spinner Styles */
+.loading-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #1a1c2c;
+}
+
+.poster-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.4;
+}
+
+.spinner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-top-color: #ac92fa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
     cursor: pointer;
 }

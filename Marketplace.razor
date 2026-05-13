@@ -42,11 +42,14 @@
             <div class="modal-content" @onclick:stopPropagation="true">
                 <button class="close-btn" @onclick="ClosePreview">&times;</button>
                 <model-viewer src="@selectedAssetForPreview.ModelUrl"
-                              poster="@selectedAssetForPreview.ThumbnailUrl"
                               alt="A 3D model of @selectedAssetForPreview.Name"
                               auto-rotate camera-controls
                               shadow-intensity="1"
                               ar>
+                    <div slot="poster" class="loading-overlay">
+                        <img src="@selectedAssetForPreview.ThumbnailUrl" class="poster-img" />
+                        <div class="spinner"></div>
+                    </div>
                 </model-viewer>
                 <div class="modal-footer">
                     <h3>@selectedAssetForPreview.Name</h3>
