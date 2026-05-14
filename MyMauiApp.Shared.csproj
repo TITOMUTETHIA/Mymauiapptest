@@ -3,12 +3,6 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-
-    <!-- Shared library should only include components; exclude platform-specific entry points -->
-    <DefaultItemExcludes>$(DefaultItemExcludes);MauiProgram.cs;MauiCameraService.cs;Program.cs;WebCameraService.cs;App.xaml*;MainPage.xaml*;ContactPage.xaml*</DefaultItemExcludes>
-  </PropertyGroup>
-  <ItemGroup>
-    <SupportedPlatform Include="browser" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0-preview.2.25164.1" />

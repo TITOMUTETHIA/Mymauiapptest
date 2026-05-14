@@ -1,11 +1,11 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.components.webview\\10.0.0-preview.1.25120.3\\staticwebassets\\blazor.webview.js",
+      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.components.webview\\10.0.0-preview.1.25120.3\\staticwebassets\\blazor.webview.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webview.js"
     },
     {
-      "Id": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\blazor.modules.json",
+      "Id": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\obj\\Debug\\net10.0-windows10.0.19041.0\\win-x64\\blazor.modules.json",
       "PackagePath": "staticwebassets\\_framework\\blazor.modules.json"
     },
     {

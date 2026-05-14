@@ -1,69 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "AFoALJmXQ7o=",
+  "dgSpecHash": "RYHZtoHjrRo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Web.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\MyMauiApp.Shared.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.3\\microsoft.aspnetcore.app.internal.assets.10.0.3.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.authorization\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.authorization.10.0.0-preview.2.25164.1.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.components\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.components.10.0.0-preview.2.25164.1.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.components.analyzers.10.0.0-preview.2.25164.1.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.components.forms.10.0.0-preview.2.25164.1.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.components.web\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.components.web.10.0.0-preview.2.25164.1.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.components.webassembly.10.0.0-preview.2.25164.1.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.components.webassembly.devserver.10.0.0-preview.2.25164.1.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.metadata\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.metadata.10.0.0-preview.2.25164.1.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.dotnet.hotreload.webassembly.browser\\10.0.103\\microsoft.dotnet.hotreload.webassembly.browser.10.0.103.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.0-preview.2.25163.2\\microsoft.extensions.configuration.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0-preview.2.25163.2\\microsoft.extensions.configuration.abstractions.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.configuration.binder\\10.0.0-preview.2.25163.2\\microsoft.extensions.configuration.binder.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\10.0.0-preview.2.25163.2\\microsoft.extensions.configuration.fileextensions.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.configuration.json\\10.0.0-preview.2.25163.2\\microsoft.extensions.configuration.json.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.0-preview.2.25163.2\\microsoft.extensions.dependencyinjection.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0-preview.2.25163.2\\microsoft.extensions.dependencyinjection.abstractions.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.diagnostics\\10.0.0-preview.2.25163.2\\microsoft.extensions.diagnostics.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\10.0.0-preview.2.25163.2\\microsoft.extensions.diagnostics.abstractions.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.0-preview.2.25163.2\\microsoft.extensions.fileproviders.abstractions.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\10.0.0-preview.2.25163.2\\microsoft.extensions.fileproviders.physical.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.0-preview.2.25163.2\\microsoft.extensions.filesystemglobbing.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.logging\\10.0.0-preview.2.25163.2\\microsoft.extensions.logging.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0-preview.2.25163.2\\microsoft.extensions.logging.abstractions.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.options\\10.0.0-preview.2.25163.2\\microsoft.extensions.options.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\10.0.0-preview.2.25163.2\\microsoft.extensions.options.configurationextensions.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0-preview.2.25163.2\\microsoft.extensions.primitives.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.jsinterop\\10.0.0-preview.2.25164.1\\microsoft.jsinterop.10.0.0-preview.2.25164.1.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.jsinterop.webassembly\\10.0.0-preview.2.25164.1\\microsoft.jsinterop.webassembly.10.0.0-preview.2.25164.1.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.3\\microsoft.net.illink.tasks.10.0.3.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\10.0.5\\microsoft.net.sdk.webassembly.pack.10.0.5.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.netcore.app.ref\\10.0.5\\microsoft.netcore.app.ref.10.0.5.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\10.0.5\\microsoft.netcore.app.runtime.mono.browser-wasm.10.0.5.nupkg.sha512"
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.authorization\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.authorization.10.0.0-preview.2.25164.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.components\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.components.10.0.0-preview.2.25164.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.components.analyzers.10.0.0-preview.2.25164.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.components.forms.10.0.0-preview.2.25164.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.components.web\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.components.web.10.0.0-preview.2.25164.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.metadata\\10.0.0-preview.2.25164.1\\microsoft.aspnetcore.metadata.10.0.0-preview.2.25164.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.0-preview.2.25163.2\\microsoft.extensions.configuration.10.0.0-preview.2.25163.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0-preview.2.25163.2\\microsoft.extensions.configuration.abstractions.10.0.0-preview.2.25163.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.configuration.binder\\10.0.0-preview.2.25163.2\\microsoft.extensions.configuration.binder.10.0.0-preview.2.25163.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.0-preview.2.25163.2\\microsoft.extensions.dependencyinjection.10.0.0-preview.2.25163.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0-preview.2.25163.2\\microsoft.extensions.dependencyinjection.abstractions.10.0.0-preview.2.25163.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.diagnostics\\10.0.0-preview.2.25163.2\\microsoft.extensions.diagnostics.10.0.0-preview.2.25163.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\10.0.0-preview.2.25163.2\\microsoft.extensions.diagnostics.abstractions.10.0.0-preview.2.25163.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0-preview.2.25163.2\\microsoft.extensions.logging.abstractions.10.0.0-preview.2.25163.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.options\\10.0.0-preview.2.25163.2\\microsoft.extensions.options.10.0.0-preview.2.25163.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\10.0.0-preview.2.25163.2\\microsoft.extensions.options.configurationextensions.10.0.0-preview.2.25163.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0-preview.2.25163.2\\microsoft.extensions.primitives.10.0.0-preview.2.25163.2.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.jsinterop\\10.0.0-preview.2.25164.1\\microsoft.jsinterop.10.0.0-preview.2.25164.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "message": "MyMauiApp.Web depends on Microsoft.AspNetCore.Components.WebAssembly (>= 10.0.0-preview.1.25122.6) but Microsoft.AspNetCore.Components.WebAssembly 10.0.0-preview.1.25122.6 was not found. Microsoft.AspNetCore.Components.WebAssembly 10.0.0-preview.2.25164.1 was resolved instead.",
-      "projectPath": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Web.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Web.csproj",
-      "libraryId": "Microsoft.AspNetCore.Components.WebAssembly",
-      "targetGraphs": [
-        "net10.0",
-        "net10.0/browser-wasm"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "message": "MyMauiApp.Web depends on Microsoft.AspNetCore.Components.WebAssembly.DevServer (>= 10.0.0-preview.1.25122.6) but Microsoft.AspNetCore.Components.WebAssembly.DevServer 10.0.0-preview.1.25122.6 was not found. Microsoft.AspNetCore.Components.WebAssembly.DevServer 10.0.0-preview.2.25164.1 was resolved instead.",
-      "projectPath": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Web.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Web.csproj",
-      "libraryId": "Microsoft.AspNetCore.Components.WebAssembly.DevServer",
-      "targetGraphs": [
-        "net10.0",
-        "net10.0/browser-wasm"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.csproj": {}
+    "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\MyMauiApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.csproj": {
+    "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\MyMauiApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\MyMauiApp.csproj",
         "projectName": "MyMauiApp",
-        "projectPath": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.csproj",
-        "packagesPath": "C:\\Users\\BIGFISH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\obj\\",
+        "projectPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\MyMauiApp.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\BIGFISH\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0-android",
@@ -32,11 +32,11 @@
             "targetAlias": "net10.0-android",
             "projectReferences": {}
           },
-          "net10.0-ios26.2": {
+          "net10.0-ios26.4": {
             "targetAlias": "net10.0-ios",
             "projectReferences": {}
           },
-          "net10.0-maccatalyst26.2": {
+          "net10.0-maccatalyst26.4": {
             "targetAlias": "net10.0-maccatalyst",
             "projectReferences": {}
           },
@@ -76,7 +76,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.3, )",
+              "version": "[10.0.2, )",
               "autoReferenced": true
             }
           },
@@ -94,7 +94,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[10.0.5, 10.0.5]"
+              "version": "[10.0.8, 10.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -108,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -384,7 +384,7 @@
             "System.Xml.XPath.XDocument": "(,5.0.32767]"
           }
         },
-        "net10.0-ios26.2": {
+        "net10.0-ios26.4": {
           "targetAlias": "net10.0-ios",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebView.Maui": {
@@ -402,7 +402,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.3, )",
+              "version": "[10.0.2, )",
               "autoReferenced": true
             }
           },
@@ -420,7 +420,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[10.0.5, 10.0.5]"
+              "version": "[10.0.8, 10.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -434,7 +434,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -710,7 +710,7 @@
             "System.Xml.XPath.XDocument": "(,5.0.32767]"
           }
         },
-        "net10.0-maccatalyst26.2": {
+        "net10.0-maccatalyst26.4": {
           "targetAlias": "net10.0-maccatalyst",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebView.Maui": {
@@ -728,7 +728,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.3, )",
+              "version": "[10.0.2, )",
               "autoReferenced": true
             }
           },
@@ -747,7 +747,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[10.0.5, 10.0.5]"
+              "version": "[10.0.8, 10.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -761,7 +761,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1078,7 +1078,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
