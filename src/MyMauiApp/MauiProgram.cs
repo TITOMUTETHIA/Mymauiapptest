@@ -1,4 +1,4 @@
-﻿﻿﻿﻿using Microsoft.Extensions.Logging;
+﻿﻿﻿using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Components.WebView.Maui;
 using MyMauiApp.Shared.Services; // Updated namespace for shared services
 
