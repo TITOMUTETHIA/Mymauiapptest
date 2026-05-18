@@ -50,7 +50,7 @@
 
 	<ItemGroup>
 		<!-- Include the hybrid host page from the parent directory -->
-		<MauiAsset Include="..\index.html" LogicalName="wwwroot\index.html" />
+		<MauiAsset Include="index.html" LogicalName="wwwroot\index.html" />
 	</ItemGroup>
 
 	<ItemGroup>

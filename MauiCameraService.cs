@@ -10,23 +10,31 @@ public class MauiCameraService : ICameraService
         {
             if (Microsoft.Maui.Media.MediaPicker.Default.IsCaptureSupported)
             {
-                var photo = await Microsoft.Maui.Media.MediaPicker.Default.CapturePhotoAsync();
-                if (photo != null)
-                {
-                    // Save to local path or return stream
-                    var localPath = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
-                    using var sourceStream = await photo.OpenReadAsync();
-                    using var localFileStream = File.OpenWrite(localPath);
-                    await sourceStream.CopyToAsync(localFileStream);
-                    return localPath;
-                }
+                FileResult? photo = await Microsoft.Maui.Media.MediaPicker.Default.CapturePhotoAsync();
+                
+                if (photo == null) return null; // User cancelled
+
+                // Ensure the filename is safe and construct path
+                string localPath = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
+                
+                using Stream sourceStream = await photo.OpenReadAsync();
+                using FileStream localFileStream = File.OpenWrite(localPath);
+                
+                await sourceStream.CopyToAsync(localFileStream);
+                return localPath;
             }
+            
+            Console.WriteLine("Camera capture is not supported on this device.");
+            return null;
+        }
+        catch (PermissionException pEx)
+        {
+            Console.WriteLine($"Camera permission denied: {pEx.Message}");
             return null;
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Error capturing photo with MAUI MediaPicker: {ex.Message}");
-            // Optionally, log the exception or show a user-friendly message
             return null;
         }
     }
