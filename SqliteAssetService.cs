@@ -6,21 +6,21 @@ namespace MyMauiApp;
 
 public class SqliteAssetService : IAssetService
 {
-    private SQLiteConnection? _db;
+    private SQLiteAsyncConnection? _db;
     private readonly string _dbPath = Path.Combine(FileSystem.AppDataDirectory, "app_data.db3");
 
     private void Init()
     {
         if (_db is not null) return;
 
-        _db = new SQLiteConnection(_dbPath);
-        _db.CreateTable<Asset>();
+        _db = new SQLiteAsyncConnection(_dbPath);
+        _db.CreateTableAsync<Asset>().Wait();
     }
 
-    public List<Asset> GetAssets()
+    public async Task<List<Asset>> GetAssetsAsync()
     {
         Init();
-        return _db!.Table<Asset>().ToList();
+        return await _db!.Table<Asset>().ToListAsync();
     }
 
     public async Task<int> SaveAssetAsync(Asset asset)
