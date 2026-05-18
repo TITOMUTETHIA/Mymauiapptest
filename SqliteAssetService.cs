@@ -28,16 +28,15 @@ public class SqliteAssetService : IAssetService
     {
         Init();
         if (asset.Id != 0)
-            return _db!.Update(asset);
+            return await _db!.UpdateAsync(asset);
         else
-            return _db!.Insert(asset);
+            return await _db!.InsertAsync(asset);
     }
 
     public async Task DeleteAssetAsync(Asset asset)
     {
         Init();
-        _db!.Delete(asset);
-        await Task.CompletedTask;
+        await _db!.DeleteAsync(asset);
     }
 
     public async Task<List<User>> GetUsersAsync()

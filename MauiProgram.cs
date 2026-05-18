@@ -22,6 +22,7 @@ public static class MauiProgram
 		builder.Services.AddMauiBlazorWebView();
 		builder.Services.AddSingleton<ICameraService, MauiCameraService>();
 		builder.Services.AddSingleton<IToastService, MauiToastService>();
+		builder.Services.AddSingleton<IAuthenticationService, AuthenticationService>();
 		
 		// Register Data Services and ViewModels
 		builder.Services.AddSingleton<IAssetService, SqliteAssetService>();
