@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Components.WebView.Maui;
 using MyMauiApp.Shared;
 using MyMauiApp.Services;
+using Microsoft.AspNetCore.Components.Authorization;
 using MyMauiApp.ViewModels;
 
 namespace MyMauiApp;
@@ -22,6 +23,8 @@ public static class MauiProgram
 		builder.Services.AddMauiBlazorWebView();
 		builder.Services.AddSingleton<ICameraService, MauiCameraService>();
 		builder.Services.AddSingleton<IToastService, MauiToastService>();
+		builder.Services.AddSingleton<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
+		builder.Services.AddAuthorizationCore(); // Required for AuthorizeRouteView
 		builder.Services.AddSingleton<IAuthenticationService, AuthenticationService>();
 		
 		// Register Data Services and ViewModels
