@@ -17,7 +17,7 @@ public class WebCameraService : ICameraService
         catch (Exception ex)
         {
             Console.WriteLine($"Error capturing image: {ex.Message}");
-            return null;
+            throw; // Propagate to UI
         }
     }
 }

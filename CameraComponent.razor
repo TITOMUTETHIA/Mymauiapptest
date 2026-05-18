@@ -1,0 +1,69 @@
+@using MyMauiApp.Shared
+@inject ICameraService CameraService
+@inject IToastService ToastService
+
+<div class="camera-integration">
+    <button class="btn btn-primary" @onclick="HandleTakePhoto" disabled="@_isProcessing">
+        @if (_isProcessing)
+        {
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span> Processing...</span>
+        }
+        else
+        {
+            <i class="oi oi-camera"></i><span> Take Photo</span>
+        }
+    </button>
+
+    @if (!string.IsNullOrEmpty(_imageSource))
+    {
+        <div class="image-preview mt-3">
+            <p>Captured Image:</p>
+            <img src="@_imageSource" alt="Captured" style="max-width: 100%; height: auto; border: 2px solid #512BD4; border-radius: 8px;" />
+        </div>
+    }
+</div>
+
+@code {
+    private string? _imageSource;
+    private bool _isProcessing;
+
+    private async Task HandleTakePhoto()
+    {
+        _isProcessing = true;
+        try
+        {
+            var result = await CameraService.TakePhotoAsync();
+
+            if (string.IsNullOrEmpty(result))
+                return;
+
+            // The WebCameraService returns a URL/Base64 directly.
+            // The MauiCameraService returns a local file path.
+            if (result.StartsWith("http") || result.StartsWith("data:image"))
+            {
+                _imageSource = result;
+            }
+            else
+            {
+                // For native platforms, we need to convert the file path to a displayable format for the WebView
+                byte[] imageBytes = await File.ReadAllBytesAsync(result);
+                string base64 = Convert.ToBase64String(imageBytes);
+                _imageSource = $"data:image/png;base64,{base64}";
+            }
+        }
+        catch (Exception ex)
+        {
+            string errorMessage = ex is UnauthorizedAccessException || ex.Message.Contains("permission", StringComparison.OrdinalIgnoreCase)
+                ? "Camera permission was denied. Please check your device settings and try again."
+                : "An unexpected error occurred while accessing the camera.";
+            
+            Console.WriteLine($"UI Error: {ex.GetType().Name} - {ex.Message}");
+            ToastService.ShowToast(errorMessage);
+        }
+        finally
+        {
+            _isProcessing = false;
+        }
+    }
+}

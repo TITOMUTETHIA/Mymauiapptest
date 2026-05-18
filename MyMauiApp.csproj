@@ -48,6 +48,11 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="$(TargetFramework.Contains('-android'))">
+		<!-- Force the Android build to use JDK 21 if the system default is incompatible (e.g., JDK 25) -->
+		<JavaSdkDirectory Condition="$([MSBuild]::IsOSPlatform('windows'))">C:\Program Files\Microsoft\jdk-21.0.6.7-hotspot</JavaSdkDirectory>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- Include the hybrid host page from the parent directory -->
 		<MauiAsset Include="index.html" LogicalName="wwwroot\index.html" />
@@ -75,6 +80,7 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="10.0.0-preview.1.25122.6" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
 	</ItemGroup>
 
 	<ItemGroup>

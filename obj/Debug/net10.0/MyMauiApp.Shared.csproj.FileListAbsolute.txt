@@ -1,0 +1,2 @@
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net10.0\EmbeddedAttribute.cs
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net10.0\ValidatableTypeAttribute.cs
