@@ -17,9 +17,6 @@
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 
-		<!-- Exclude Web-specific entry points and other project files to prevent duplication -->
-		<DefaultItemExcludes>$(DefaultItemExcludes);Program.cs;WebCameraService.cs;MyMauiApp.Web.csproj;MyMauiApp.Shared.csproj</DefaultItemExcludes>
-
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 

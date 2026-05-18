@@ -10,7 +10,14 @@ public class WebCameraService : ICameraService
 
     public async Task<string?> TakePhotoAsync()
     {
-        // In a real app, you would call a JS function to open the webcam
-        return await _js.InvokeAsync<string>("captureWebcamImage");
+        try
+        {
+            return await _js.InvokeAsync<string>("captureWebcamImage");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error capturing image: {ex.Message}");
+            return null;
+        }
     }
 }

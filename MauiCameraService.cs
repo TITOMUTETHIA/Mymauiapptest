@@ -6,19 +6,28 @@ public class MauiCameraService : ICameraService
 {
     public async Task<string?> TakePhotoAsync()
     {
-        if (Microsoft.Maui.Media.MediaPicker.Default.IsCaptureSupported)
+        try
         {
-            var photo = await Microsoft.Maui.Media.MediaPicker.Default.CapturePhotoAsync();
-            if (photo != null)
+            if (Microsoft.Maui.Media.MediaPicker.Default.IsCaptureSupported)
             {
-                // Save to local path or return stream
-                var localPath = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
-                using var sourceStream = await photo.OpenReadAsync();
-                using var localFileStream = File.OpenWrite(localPath);
-                await sourceStream.CopyToAsync(localFileStream);
-                return localPath;
+                var photo = await Microsoft.Maui.Media.MediaPicker.Default.CapturePhotoAsync();
+                if (photo != null)
+                {
+                    // Save to local path or return stream
+                    var localPath = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
+                    using var sourceStream = await photo.OpenReadAsync();
+                    using var localFileStream = File.OpenWrite(localPath);
+                    await sourceStream.CopyToAsync(localFileStream);
+                    return localPath;
+                }
             }
+            return null;
         }
-        return null;
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error capturing photo with MAUI MediaPicker: {ex.Message}");
+            // Optionally, log the exception or show a user-friendly message
+            return null;
+        }
     }
 }

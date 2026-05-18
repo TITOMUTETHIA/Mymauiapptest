@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Shared.csproj": {}
+    "C:\\Users\\BIGFISH\\OneDrive\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Shared.csproj": {
+    "C:\\Users\\BIGFISH\\OneDrive\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\BIGFISH\\OneDrive\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Shared.csproj",
         "projectName": "MyMauiApp.Shared",
-        "projectPath": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Shared.csproj",
+        "projectPath": "C:\\Users\\BIGFISH\\OneDrive\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Shared.csproj",
         "packagesPath": "C:\\Users\\BIGFISH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BIGFISH\\Documents\\MAUI APP\\MyMauiApp\\obj\\",
+        "outputPath": "C:\\Users\\BIGFISH\\OneDrive\\Documents\\MAUI APP\\MyMauiApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BIGFISH\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -47,7 +47,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
-              "version": "[10.0.0-preview.1.25122.6, )"
+              "version": "[10.0.0-preview.2.25164.1, )"
             }
           },
           "imports": [

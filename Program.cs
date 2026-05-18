@@ -1,3 +1,6 @@
+// This file has been moved to the Web project folder to prevent 
+// compilation conflicts with the MAUI mobile target.
+
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MyMauiApp;

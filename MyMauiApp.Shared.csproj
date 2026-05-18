@@ -4,8 +4,6 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 
-    <!-- Shared library should only include components; exclude platform-specific entry points -->
-    <DefaultItemExcludes>$(DefaultItemExcludes);MauiProgram.cs;MauiCameraService.cs;Program.cs;WebCameraService.cs;App.xaml*;MainPage.xaml*;ContactPage.xaml*</DefaultItemExcludes>
   </PropertyGroup>
   <ItemGroup>
     <SupportedPlatform Include="browser" />
