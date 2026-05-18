@@ -7,4 +7,7 @@ public interface IAssetService
     Task<List<Asset>> GetAssetsAsync(); 
     Task<int> SaveAssetAsync(Asset asset);
     Task DeleteAssetAsync(Asset asset);
+
+    Task<List<User>> GetUsersAsync();
+    Task<int> SaveUserAsync(User user);
 }

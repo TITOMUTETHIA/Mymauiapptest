@@ -15,6 +15,7 @@ public class SqliteAssetService : IAssetService
 
         _db = new SQLiteAsyncConnection(_dbPath);
         _db.CreateTableAsync<Asset>().Wait();
+        _db.CreateTableAsync<User>().Wait();
     }
 
     public async Task<List<Asset>> GetAssetsAsync()
@@ -37,5 +38,20 @@ public class SqliteAssetService : IAssetService
         Init();
         _db!.Delete(asset);
         await Task.CompletedTask;
+    }
+
+    public async Task<List<User>> GetUsersAsync()
+    {
+        Init();
+        return await _db!.Table<User>().ToListAsync();
+    }
+
+    public async Task<int> SaveUserAsync(User user)
+    {
+        Init();
+        if (user.Id != 0)
+            return await _db!.UpdateAsync(user);
+        else
+            return await _db!.InsertAsync(user);
     }
 }

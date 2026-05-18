@@ -14,4 +14,5 @@ public class Asset
     public string? Category { get; set; }
     public string? LocalFilePath { get; set; } // Path to Image or 3D Model file
     public string? Url { get; set; }           // For website references
+    public UserRole RequiredRole { get; set; } = UserRole.Viewer;
 }
