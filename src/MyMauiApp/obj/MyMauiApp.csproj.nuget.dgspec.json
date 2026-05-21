@@ -4,6 +4,72 @@
     "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp\\MyMauiApp.csproj": {}
   },
   "projects": {
+    "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj",
+        "projectName": "MyMauiApp.Shared",
+        "projectPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "NETStandard.Library.Ref",
+              "version": "[2.1.0, 2.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp\\MyMauiApp.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,19 +96,35 @@
         "frameworks": {
           "net10.0-android36.0": {
             "targetAlias": "net10.0-android",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj"
+              }
+            }
           },
           "net10.0-ios26.4": {
             "targetAlias": "net10.0-ios",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj"
+              }
+            }
           },
           "net10.0-maccatalyst26.4": {
             "targetAlias": "net10.0-maccatalyst",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj"
+              }
+            }
           },
           "net10.0-windows10.0.19041": {
             "targetAlias": "net10.0-windows10.0.19041.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

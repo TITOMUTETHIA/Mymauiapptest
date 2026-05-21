@@ -4,9 +4,9 @@
 
 <div class="cart-icon-container">
     <span class="oi oi-cart" aria-hidden="true"></span>
-    @if (CartService.GetCount() > 0)
+    @if (CartService.Items?.Count > 0)
     {
-        <span class="cart-badge">@CartService.GetCount()</span>
+        <span class="cart-badge">@CartService.Items.Count</span>
     }
 </div>
 

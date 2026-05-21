@@ -1,16 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using MyMauiApp.Shared.Models;
+using System.Collections.ObjectModel;
 
 namespace MyMauiApp.Shared.Services;
 
 public interface ICartService
 {
-    IReadOnlyList<Asset> Items { get; }
-    event Action? OnChange;
-    Task AddToCartAsync(Asset asset);
-    Task RemoveFromCartAsync(Asset asset);
-    int GetCount();
-    Task InitializeAsync();
+    ObservableCollection<Asset> CartItems { get; }
+
+    void AddToCart(Asset asset);
+    void RemoveFromCart(Asset asset);
+    void ClearCart();
+    decimal GetTotalPrice();
 }

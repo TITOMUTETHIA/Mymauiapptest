@@ -1,60 +1,35 @@
-using System;
-using System.Collections.Generic;
-using System.Text.Json;
-using System.Threading.Tasks;
-using System.Linq;
-using Microsoft.JSInterop;
 using MyMauiApp.Shared.Models;
+using System.Collections.ObjectModel;
 
 namespace MyMauiApp.Shared.Services;
 
 public class CartService : ICartService
 {
-    private readonly IJSRuntime _js;
-    private List<Asset> _items = new();
-    private const string StorageKey = "code_champs_cart";
+    public ObservableCollection<Asset> CartItems { get; private set; }
 
-    public CartService(IJSRuntime js)
+    public CartService()
     {
-        _js = js;
+        CartItems = new ObservableCollection<Asset>();
     }
 
-    public IReadOnlyList<Asset> Items => _items.AsReadOnly();
-
-    public event Action? OnChange;
-
-    public async Task InitializeAsync()
+    public void AddToCart(Asset asset)
     {
-        try
-        {
-            var json = await _js.InvokeAsync<string?>("localStorage.getItem", StorageKey);
-            if (!string.IsNullOrEmpty(json))
-            {
-                _items = JsonSerializer.Deserialize<List<Asset>>(json) ?? new();
-                NotifyStateChanged();
-            }
-        }
-        catch { /* Handle potential JS interop initialization delays */ }
+        // In a real app, you might want to check for duplicates and update quantity
+        CartItems.Add(asset);
     }
 
-    public async Task AddToCartAsync(Asset asset)
+    public void RemoveFromCart(Asset asset)
     {
-        _items.Add(asset);
-        await _js.InvokeVoidAsync("localStorage.setItem", StorageKey, JsonSerializer.Serialize(_items));
-        NotifyStateChanged();
+        CartItems.Remove(asset);
     }
 
-    public async Task RemoveFromCartAsync(Asset asset)
+    public void ClearCart()
     {
-        var itemToRemove = _items.FirstOrDefault(i => i.Id == asset.Id);
-        if (itemToRemove != null && _items.Remove(itemToRemove))
-        {
-            await _js.InvokeVoidAsync("localStorage.setItem", StorageKey, JsonSerializer.Serialize(_items));
-            NotifyStateChanged();
-        }
+        CartItems.Clear();
     }
 
-    public int GetCount() => _items.Count;
-
-    private void NotifyStateChanged() => OnChange?.Invoke();
+    public decimal GetTotalPrice()
+    {
+        return CartItems.Sum(item => item.Price);
+    }
 }

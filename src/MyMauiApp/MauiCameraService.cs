@@ -9,7 +9,7 @@ public class MauiCameraService : ICameraService
         if (Microsoft.Maui.Media.MediaPicker.Default.IsCaptureSupported)
         {
             var photo = await Microsoft.Maui.Media.MediaPicker.Default.CapturePhotoAsync();
-            if (photo != null)
+            if (photo is not null)
             {
                 // Save to local path or return stream
                 var localPath = Path.Combine(FileSystem.CacheDirectory, photo.FileName);

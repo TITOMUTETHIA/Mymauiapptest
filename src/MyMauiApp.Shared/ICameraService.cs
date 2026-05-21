@@ -2,6 +2,8 @@ namespace MyMauiApp.Shared.Services;
 
 public interface ICameraService
 {
-    // Returns the image path or base64 string
+    /// <summary>
+    /// Captures a photo and returns the local path to the saved image, or null if cancelled.
+    /// </summary>
     Task<string?> TakePhotoAsync();
 }

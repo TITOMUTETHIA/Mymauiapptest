@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PQU5rGMuLx4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ADMIN\\.nuget\\packages\\netstandard.library.ref\\2.1.0\\netstandard.library.ref.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

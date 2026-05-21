@@ -2779,6 +2779,16 @@
             "related": ".aar;.pdb;.xml"
           }
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-android36.0/android-arm64": {
@@ -5558,6 +5568,16 @@
           "lib/net10.0-android36.0/Xamarin.KotlinX.Serialization.Core.Jvm.dll": {
             "related": ".aar;.pdb;.xml"
           }
+        }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
         }
       }
     },
@@ -8339,6 +8359,16 @@
             "related": ".aar;.pdb;.xml"
           }
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-android36.0/iossimulator-x64": {
@@ -11118,6 +11148,16 @@
           "lib/net10.0-android36.0/Xamarin.KotlinX.Serialization.Core.Jvm.dll": {
             "related": ".aar;.pdb;.xml"
           }
+        }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
         }
       }
     },
@@ -13899,6 +13939,16 @@
             "related": ".aar;.pdb;.xml"
           }
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-android36.0/win-x64": {
@@ -16679,6 +16729,16 @@
             "related": ".aar;.pdb;.xml"
           }
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-ios26.4": {
@@ -17438,6 +17498,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
         }
       }
     },
@@ -18199,6 +18269,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-ios26.4/android-x64": {
@@ -18958,6 +19038,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
         }
       }
     },
@@ -19719,6 +19809,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-ios26.4/maccatalyst-x64": {
@@ -20478,6 +20578,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
         }
       }
     },
@@ -21239,6 +21349,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-maccatalyst26.4": {
@@ -21998,6 +22118,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
         }
       }
     },
@@ -22759,6 +22889,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-maccatalyst26.4/android-x64": {
@@ -23518,6 +23658,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
         }
       }
     },
@@ -24279,6 +24429,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-maccatalyst26.4/maccatalyst-x64": {
@@ -25039,6 +25199,16 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-maccatalyst26.4/win-x64": {
@@ -25798,6 +25968,16 @@
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
         }
       }
     },
@@ -26810,6 +26990,16 @@
             "rid": "win-x86"
           }
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-windows10.0.19041/android-arm64": {
@@ -27758,6 +27948,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
         }
       }
     },
@@ -28708,6 +28908,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-windows10.0.19041/iossimulator-x64": {
@@ -29657,6 +29867,16 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        }
       }
     },
     "net10.0-windows10.0.19041/maccatalyst-x64": {
@@ -30605,6 +30825,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
         }
       }
     },
@@ -31564,6 +31794,16 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "MyMauiApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyMauiApp.Shared.dll": {}
         }
       }
     }
@@ -36429,6 +36669,11 @@
         "xamarin.kotlinx.serialization.core.jvm.1.9.0.1.nupkg.sha512",
         "xamarin.kotlinx.serialization.core.jvm.nuspec"
       ]
+    },
+    "MyMauiApp.Shared/1.0.0": {
+      "type": "project",
+      "path": "../MyMauiApp.Shared/MyMauiApp.Shared.csproj",
+      "msbuildProject": "../MyMauiApp.Shared/MyMauiApp.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -36436,24 +36681,28 @@
       "Microsoft.AspNetCore.Components.WebView.Maui >= 10.0.0-preview.1.25122.6",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.20",
-      "Microsoft.NET.ILLink.Tasks >= 10.0.2"
+      "Microsoft.NET.ILLink.Tasks >= 10.0.2",
+      "MyMauiApp.Shared >= 1.0.0"
     ],
     "net10.0-ios26.4": [
       "Microsoft.AspNetCore.Components.WebView.Maui >= 10.0.0-preview.1.25122.6",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.20",
-      "Microsoft.NET.ILLink.Tasks >= 10.0.2"
+      "Microsoft.NET.ILLink.Tasks >= 10.0.2",
+      "MyMauiApp.Shared >= 1.0.0"
     ],
     "net10.0-maccatalyst26.4": [
       "Microsoft.AspNetCore.Components.WebView.Maui >= 10.0.0-preview.1.25122.6",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.20",
-      "Microsoft.NET.ILLink.Tasks >= 10.0.2"
+      "Microsoft.NET.ILLink.Tasks >= 10.0.2",
+      "MyMauiApp.Shared >= 1.0.0"
     ],
     "net10.0-windows10.0.19041": [
       "Microsoft.AspNetCore.Components.WebView.Maui >= 10.0.0-preview.1.25122.6",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
-      "Microsoft.Maui.Controls >= 10.0.20"
+      "Microsoft.Maui.Controls >= 10.0.20",
+      "MyMauiApp.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -36485,19 +36734,35 @@
       "frameworks": {
         "net10.0-android36.0": {
           "targetAlias": "net10.0-android",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj"
+            }
+          }
         },
         "net10.0-ios26.4": {
           "targetAlias": "net10.0-ios",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj"
+            }
+          }
         },
         "net10.0-maccatalyst26.4": {
           "targetAlias": "net10.0-maccatalyst",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj"
+            }
+          }
         },
         "net10.0-windows10.0.19041": {
           "targetAlias": "net10.0-windows10.0.19041.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\OneDrive - Chrome Partners\\Desktop\\tito\\MAUI\\Mymauiapptest\\src\\MyMauiApp.Shared\\MyMauiApp.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

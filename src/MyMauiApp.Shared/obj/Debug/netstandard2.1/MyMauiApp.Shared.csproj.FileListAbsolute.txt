@@ -1,0 +1,5 @@
+C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\tito\MAUI\Mymauiapptest\src\MyMauiApp.Shared\obj\Debug\netstandard2.1\MyMauiApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\tito\MAUI\Mymauiapptest\src\MyMauiApp.Shared\obj\Debug\netstandard2.1\MyMauiApp.Shared.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\tito\MAUI\Mymauiapptest\src\MyMauiApp.Shared\obj\Debug\netstandard2.1\MyMauiApp.Shared.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\tito\MAUI\Mymauiapptest\src\MyMauiApp.Shared\obj\Debug\netstandard2.1\MyMauiApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive - Chrome Partners\Desktop\tito\MAUI\Mymauiapptest\src\MyMauiApp.Shared\obj\Debug\netstandard2.1\MyMauiApp.Shared.sourcelink.json
