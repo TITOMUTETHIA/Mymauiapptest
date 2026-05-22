@@ -1,9 +1,10 @@
-﻿﻿﻿﻿using Microsoft.Extensions.Logging;
+﻿﻿﻿﻿﻿﻿using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Components.WebView.Maui;
 using MyMauiApp.Shared;
 using MyMauiApp.Services;
 using Microsoft.AspNetCore.Components.Authorization;
 using MyMauiApp.ViewModels;
+using CommunityToolkit.Maui;
 
 namespace MyMauiApp;
 
@@ -14,6 +15,7 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
+			.UseMauiCommunityToolkit()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

@@ -1,9 +1,8 @@
 using System.Net.Http.Json;
 using MyMauiApp.Models;
-using MyMauiApp.Services;
 using MyMauiApp.Shared;
 
-namespace MyMauiApp;
+namespace MyMauiApp.Services;
 
 public class WebAssetService : IAssetService
 {

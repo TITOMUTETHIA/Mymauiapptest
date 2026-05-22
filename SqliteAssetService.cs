@@ -1,21 +1,30 @@
 using SQLite;
 using MyMauiApp.Models;
-using MyMauiApp.Services;
 
-namespace MyMauiApp;
+namespace MyMauiApp.Services;
 
 public class SqliteAssetService : IAssetService
 {
     private SQLiteAsyncConnection? _db;
+    private readonly SemaphoreSlim _initializationSemaphore = new(1, 1);
     private readonly string _dbPath = Path.Combine(FileSystem.AppDataDirectory, "app_data.db3");
 
     private async Task Init()
     {
         if (_db is not null) return;
 
-        _db = new SQLiteAsyncConnection(_dbPath);
-        await _db.CreateTableAsync<Asset>();
-        await _db.CreateTableAsync<User>();
+        await _initializationSemaphore.WaitAsync();
+        try
+        {
+            if (_db is not null) return;
+
+            _db = new SQLiteAsyncConnection(_dbPath);
+            await _db.CreateTablesAsync<Asset, User>();
+        }
+        finally
+        {
+            _initializationSemaphore.Release();
+        }
     }
 
     public async Task<List<Asset>> GetAssetsAsync()

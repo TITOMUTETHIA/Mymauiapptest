@@ -1,7 +1,7 @@
 using Microsoft.JSInterop;
 using MyMauiApp.Shared;
 
-namespace MyMauiApp;
+namespace MyMauiApp.Services;
 
 public class WebCameraService : ICameraService
 {

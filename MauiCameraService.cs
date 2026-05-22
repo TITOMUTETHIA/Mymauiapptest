@@ -2,7 +2,7 @@ using MyMauiApp.Shared;
 using Microsoft.Maui.Graphics;
 using Microsoft.Maui.Graphics.Platform;
 
-namespace MyMauiApp;
+namespace MyMauiApp.Services;
 
 public class MauiCameraService : ICameraService
 {

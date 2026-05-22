@@ -1,7 +1,6 @@
 using MyMauiApp.Models;
-using MyMauiApp.Services;
 
-namespace MyMauiApp;
+namespace MyMauiApp.Services;
 
 public class AuthenticationService : IAuthenticationService
 {

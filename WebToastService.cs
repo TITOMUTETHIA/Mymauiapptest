@@ -1,6 +1,6 @@
 using MyMauiApp.Shared;
 
-namespace MyMauiApp;
+namespace MyMauiApp.Services;
 
 public class WebToastService : IToastService
 {

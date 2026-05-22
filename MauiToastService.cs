@@ -3,7 +3,7 @@ using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
 using Microsoft.Maui.Controls;
 
-namespace MyMauiApp;
+namespace MyMauiApp.Services;
 
 public class MauiToastService : IToastService
 {

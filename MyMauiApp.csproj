@@ -1,9 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
 	<PropertyGroup>
-		<TargetFrameworks>net10.0-android</TargetFrameworks>
-		<TargetFrameworks Condition="!$([MSBuild]::IsOSPlatform('linux'))">$(TargetFrameworks);net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- TargetFrameworks are defined in Directory.Build.props for consistency -->
+		<TargetFramework />
+		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net9.0-windows10.0.19041.0</TargetFrameworks>
+
+		<!-- Runtime Identifiers for Windows to resolve NETSDK1047 -->
+		<RuntimeIdentifiers Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">win10-x64;win10-x86;win10-arm64</RuntimeIdentifiers>
 
 		<!-- Note for MacCatalyst:
 		The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
@@ -54,8 +58,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<!-- Include the hybrid host page from the parent directory -->
-		<MauiAsset Include="index.html" LogicalName="wwwroot\index.html" />
+		<Compile Remove="Program.cs" />
+		<None Include="index.html" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -78,9 +82,10 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="10.0.0-preview.1.25122.6" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="9.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="9.0.0" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="9.1.0" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
 	</ItemGroup>
 

@@ -15,10 +15,8 @@
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>
-        // Mock implementation for the Web Camera Service
         window.captureWebcamImage = async () => {
             console.log("Web camera access requested.");
-            // Returns a placeholder image to simulate a successful capture
             return "https://placehold.co/600x400/512BD4/white?text=Captured+from+Browser";
         };
     </script>

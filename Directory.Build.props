@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <!-- Define the target framework for all projects in this solution -->
+    <!-- This will be overridden by project-specific TargetFrameworks if they exist,
+         but for consistency, we will remove them from individual projects. -->
+    <TargetFramework Condition="'$(TargetFrameworks)' == ''">net9.0</TargetFramework>
+  </PropertyGroup>
+</Project>

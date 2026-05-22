@@ -1,7 +1,6 @@
 using MyMauiApp.Models;
-using MyMauiApp.Services;
 
-namespace MyMauiApp;
+namespace MyMauiApp.Services;
 
 public class ModelImportService
 {
@@ -38,7 +37,8 @@ public class ModelImportService
             if (!Directory.Exists(modelsDir)) Directory.CreateDirectory(modelsDir);
 
             // 4. Copy file to local storage (prevent overwriting with unique names if needed)
-            string destinationPath = Path.Combine(modelsDir, result.FileName);
+            string uniqueFileName = $"{Guid.NewGuid()}_{result.FileName}";
+            string destinationPath = Path.Combine(modelsDir, uniqueFileName);
             using (var sourceStream = await result.OpenReadAsync())
             using (var destStream = File.Create(destinationPath))
             {
