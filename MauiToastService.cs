@@ -7,6 +7,8 @@ namespace MyMauiApp;
 
 public class MauiToastService : IToastService
 {
+    public event Action<string>? OnShow;
+
     public void ShowToast(string message)
     {
         // IToast is a simple way to show platform-specific toasts in MAUI.
