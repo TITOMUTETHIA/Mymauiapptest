@@ -1,5 +1,7 @@
 using MyMauiApp.Shared;
-using Microsoft.Maui.Controls; // For IToast
+using CommunityToolkit.Maui.Alerts;
+using CommunityToolkit.Maui.Core;
+using Microsoft.Maui.Controls;
 
 namespace MyMauiApp;
 

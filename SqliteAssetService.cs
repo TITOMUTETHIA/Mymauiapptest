@@ -9,24 +9,24 @@ public class SqliteAssetService : IAssetService
     private SQLiteAsyncConnection? _db;
     private readonly string _dbPath = Path.Combine(FileSystem.AppDataDirectory, "app_data.db3");
 
-    private void Init()
+    private async Task Init()
     {
         if (_db is not null) return;
 
         _db = new SQLiteAsyncConnection(_dbPath);
-        _db.CreateTableAsync<Asset>().Wait();
-        _db.CreateTableAsync<User>().Wait();
+        await _db.CreateTableAsync<Asset>();
+        await _db.CreateTableAsync<User>();
     }
 
     public async Task<List<Asset>> GetAssetsAsync()
     {
-        Init();
+        await Init();
         return await _db!.Table<Asset>().ToListAsync();
     }
 
     public async Task<int> SaveAssetAsync(Asset asset)
     {
-        Init();
+        await Init();
         if (asset.Id != 0)
             return await _db!.UpdateAsync(asset);
         else
@@ -35,19 +35,19 @@ public class SqliteAssetService : IAssetService
 
     public async Task DeleteAssetAsync(Asset asset)
     {
-        Init();
+        await Init();
         await _db!.DeleteAsync(asset);
     }
 
     public async Task<List<User>> GetUsersAsync()
     {
-        Init();
+        await Init();
         return await _db!.Table<User>().ToListAsync();
     }
 
     public async Task<int> SaveUserAsync(User user)
     {
-        Init();
+        await Init();
         if (user.Id != 0)
             return await _db!.UpdateAsync(user);
         else

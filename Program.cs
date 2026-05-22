@@ -18,6 +18,10 @@ builder.Services.AddScoped(sp => new HttpClient {
 builder.Services.AddScoped<ICameraService, WebCameraService>();
 builder.Services.AddScoped<IToastService, WebToastService>(); // C# only toast for Web
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
+
+// You must register an IAssetService implementation here for the Web project to run.
+builder.Services.AddScoped<IAssetService, WebAssetService>();
+
 builder.Services.AddAuthorizationCore(); // Required for AuthorizeRouteView
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XF4V8O5Ds70=",
+  "dgSpecHash": "kY0d72+njTg=",
   "success": true,
   "projectFilePath": "C:\\Users\\BIGFISH\\OneDrive\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Shared.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,12 @@
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.options\\10.0.0-preview.2.25163.2\\microsoft.extensions.options.10.0.0-preview.2.25163.2.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\10.0.0-preview.2.25163.2\\microsoft.extensions.options.configurationextensions.10.0.0-preview.2.25163.2.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0-preview.2.25163.2\\microsoft.extensions.primitives.10.0.0-preview.2.25163.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.jsinterop\\10.0.0-preview.2.25164.1\\microsoft.jsinterop.10.0.0-preview.2.25164.1.nupkg.sha512"
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.jsinterop\\10.0.0-preview.2.25164.1\\microsoft.jsinterop.10.0.0-preview.2.25164.1.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\sqlite-net-pcl\\1.9.172\\sqlite-net-pcl.1.9.172.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.1.2\\sqlitepclraw.bundle_green.2.1.2.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.2\\sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512"
   ],
   "logs": []
 }
