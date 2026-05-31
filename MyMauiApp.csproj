@@ -59,7 +59,6 @@
 
 	<ItemGroup>
 		<Compile Remove="Program.cs" />
-		<None Include="index.html" />
 	</ItemGroup>
 
 	<ItemGroup>

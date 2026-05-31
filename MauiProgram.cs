@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿using Microsoft.Extensions.Logging;
+﻿﻿﻿﻿﻿﻿﻿﻿using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Components.WebView.Maui;
 using MyMauiApp.Shared;
 using MyMauiApp.Services;
@@ -31,7 +31,10 @@ public static class MauiProgram
 		
 		// Register Data Services and ViewModels
 		builder.Services.AddSingleton<IAssetService, SqliteAssetService>();
-		builder.Services.AddTransient<MainViewModel>();
+		builder.Services.AddSingleton<MainViewModel>();
+
+		// Register Pages for DI
+		builder.Services.AddTransient<MainPage>();
 
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();

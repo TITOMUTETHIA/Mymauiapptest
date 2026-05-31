@@ -7,16 +7,24 @@ namespace MyMauiApp.ViewModels;
 public class MainViewModel
 {
     public ObservableCollection<Asset> Assets { get; } = new();
+    private readonly IAssetService _assetService;
+
+    public event Action? OnStateChanged;
 
     public MainViewModel(IAssetService assetService)
     {
-        _ = InitializeAsync(assetService);
+        _assetService = assetService;
     }
 
-    private async Task InitializeAsync(IAssetService assetService)
+    public async Task LoadAssetsAsync()
     {
-        var data = await assetService.GetAssetsAsync();
+        var data = await _assetService.GetAssetsAsync();
+        Assets.Clear();
         foreach (var item in data)
             Assets.Add(item);
+
+        NotifyStateChanged();
     }
+
+    public void NotifyStateChanged() => OnStateChanged?.Invoke();
 }
