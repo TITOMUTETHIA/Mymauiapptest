@@ -60,7 +60,7 @@
             },
             "Microsoft.Extensions.AI": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[10.6.0, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",

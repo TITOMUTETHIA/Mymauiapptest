@@ -22,10 +22,13 @@ public class MainViewModel
     {
         try
         {
-            var data = await _assetService.GetAssetsAsync();
+            var response = await _assetService.GetAssetsAsync();
             Assets.Clear();
-            foreach (var item in data)
-                Assets.Add(item);
+            if (response.Success && response.Data != null)
+            {
+                foreach (var item in response.Data)
+                    Assets.Add(item);
+            }
         }
         catch (Exception ex)
         {
@@ -52,6 +55,31 @@ public class MainViewModel
         {
             asset.AiAnalysis = "Analysis unavailable.";
             Console.WriteLine($"AI Analysis error: {ex.Message}");
+        }
+        finally
+        {
+            NotifyStateChanged();
+        }
+    }
+
+    public async Task<bool> DeleteAssetAsync(Asset asset)
+    {
+        if (asset == null) return false;
+
+        try
+        {
+            var response = await _assetService.DeleteAssetAsync(asset);
+            bool isDeleted = response.Success && response.Data;
+            if (isDeleted)
+            {
+                Assets.Remove(asset);
+            }
+            return isDeleted;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error deleting asset: {ex.Message}");
+            return false;
         }
         finally
         {

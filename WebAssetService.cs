@@ -16,7 +16,7 @@ public class WebAssetService : IAssetService
         _toastService = toastService;
     }
 
-    private async Task<T?> SendRequestAsync<T>(Func<CancellationToken, Task<T>> requestFunc)
+    private async Task<ServiceResponse<T>> SendRequestAsync<T>(Func<CancellationToken, Task<ServiceResponse<T>>> requestFunc)
     {
         using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(DefaultTimeoutSeconds));
         try
@@ -25,30 +25,33 @@ public class WebAssetService : IAssetService
         }
         catch (OperationCanceledException)
         {
-            _toastService.ShowToast("The request timed out. Please try again.");
-            return default;
+            var msg = "The request timed out. Please try again.";
+            _toastService.ShowToast(msg);
+            return ServiceResponse<T>.Fail(msg);
         }
         catch (HttpRequestException ex)
         {
-            _toastService.ShowToast($"Server error: {ex.StatusCode ?? System.Net.HttpStatusCode.ServiceUnavailable}");
-            return default;
+            var msg = $"Server error: {ex.StatusCode ?? System.Net.HttpStatusCode.ServiceUnavailable}";
+            _toastService.ShowToast(msg);
+            return ServiceResponse<T>.Fail(msg);
         }
         catch (Exception ex)
         {
-            _toastService.ShowToast($"An unexpected error occurred: {ex.Message}");
-            return default;
+            var msg = $"An unexpected error occurred: {ex.Message}";
+            _toastService.ShowToast(msg);
+            return ServiceResponse<T>.Fail(msg);
         }
     }
 
-    public async Task<List<Asset>> GetAssetsAsync()
+    public async Task<ServiceResponse<List<Asset>>> GetAssetsAsync()
     {
-        var result = await SendRequestAsync(ct => _httpClient.GetFromJsonAsync<List<Asset>>("api/assets", ct));
-        return result ?? new List<Asset>();
+        return await SendRequestAsync(async ct => 
+            ServiceResponse<List<Asset>>.Ok(await _httpClient.GetFromJsonAsync<List<Asset>>("api/assets", ct) ?? new()));
     }
 
-    public async Task<int> SaveAssetAsync(Asset asset)
+    public async Task<ServiceResponse<int>> SaveAssetAsync(Asset asset)
     {
-        var result = await SendRequestAsync<int>(async ct =>
+        return await SendRequestAsync(async ct =>
         {
             HttpResponseMessage response;
             if (asset.Id != 0)
@@ -62,37 +65,38 @@ public class WebAssetService : IAssetService
 
             if (!response.IsSuccessStatusCode)
             {
-                _toastService.ShowToast($"Failed to save asset: {response.StatusCode}");
-                return 0;
+                var error = await response.Content.ReadAsStringAsync();
+                var msg = string.IsNullOrWhiteSpace(error) ? $"Failed to save asset: {response.StatusCode}" : error;
+                _toastService.ShowToast(msg);
+                return ServiceResponse<int>.Fail(msg);
             }
-            return 1;
+            return ServiceResponse<int>.Ok(1);
         });
-
-        return result;
     }
 
-    public async Task DeleteAssetAsync(Asset asset)
+    public async Task<ServiceResponse<bool>> DeleteAssetAsync(Asset asset)
     {
-        await SendRequestAsync<bool>(async ct =>
+        return await SendRequestAsync(async ct =>
         {
             var response = await _httpClient.DeleteAsync($"api/assets/{asset.Id}", ct);
             if (!response.IsSuccessStatusCode)
             {
-                _toastService.ShowToast($"Failed to delete asset: {response.StatusCode}");
+                var error = await response.Content.ReadAsStringAsync();
+                return ServiceResponse<bool>.Fail(error);
             }
-            return response.IsSuccessStatusCode;
+            return ServiceResponse<bool>.Ok(true);
         });
     }
 
-    public async Task<List<User>> GetUsersAsync()
+    public async Task<ServiceResponse<List<User>>> GetUsersAsync()
     {
-        var result = await SendRequestAsync(ct => _httpClient.GetFromJsonAsync<List<User>>("api/users", ct));
-        return result ?? new List<User>();
+        return await SendRequestAsync(async ct => 
+            ServiceResponse<List<User>>.Ok(await _httpClient.GetFromJsonAsync<List<User>>("api/users", ct) ?? new()));
     }
 
-    public async Task<int> SaveUserAsync(User user)
+    public async Task<ServiceResponse<int>> SaveUserAsync(User user)
     {
-        var result = await SendRequestAsync<int>(async ct =>
+        return await SendRequestAsync(async ct =>
         {
             HttpResponseMessage response;
             if (user.Id != 0)
@@ -106,12 +110,11 @@ public class WebAssetService : IAssetService
 
             if (!response.IsSuccessStatusCode)
             {
-                _toastService.ShowToast($"Failed to save user: {response.StatusCode}");
-                return 0;
+                var error = await response.Content.ReadAsStringAsync();
+                _toastService.ShowToast(error);
+                return ServiceResponse<int>.Fail(error);
             }
-            return 1;
+            return ServiceResponse<int>.Ok(1);
         });
-
-        return result;
     }
 }

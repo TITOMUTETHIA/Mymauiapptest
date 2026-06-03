@@ -13,25 +13,30 @@ public class AuthenticationService : IAuthenticationService
         _assetService = assetService;
     }
 
-    public async Task<bool> LoginAsync(string username)
+    public async Task<ServiceResponse<bool>> LoginAsync(string username)
     {
         try
         {
-            var users = await _assetService.GetUsersAsync();
-            var user = users.FirstOrDefault(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
+            var response = await _assetService.GetUsersAsync();
+            
+            if (!response.Success)
+            {
+                return ServiceResponse<bool>.Fail(response.Message ?? "Failed to retrieve user data from the service.");
+            }
+
+            var user = response.Data?.FirstOrDefault(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
             
             if (user != null)
             {
                 CurrentUser = user;
                 UserChanged?.Invoke();
-                return true;
+                return ServiceResponse<bool>.Ok(true);
             }
-            return false;
+            return ServiceResponse<bool>.Fail("Invalid username. Please try again.");
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Login error: {ex.Message}");
-            return false;
+            return ServiceResponse<bool>.Fail($"A system error occurred: {ex.Message}");
         }
     }
 

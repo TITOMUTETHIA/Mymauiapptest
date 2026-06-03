@@ -4,10 +4,10 @@ namespace MyMauiApp.Services;
 
 public interface IAssetService
 {
-    Task<List<Asset>> GetAssetsAsync(); 
-    Task<int> SaveAssetAsync(Asset asset);
-    Task DeleteAssetAsync(Asset asset);
+    Task<ServiceResponse<List<Asset>>> GetAssetsAsync(); 
+    Task<ServiceResponse<int>> SaveAssetAsync(Asset asset);
+    Task<ServiceResponse<bool>> DeleteAssetAsync(Asset asset);
 
-    Task<List<User>> GetUsersAsync();
-    Task<int> SaveUserAsync(User user);
+    Task<ServiceResponse<List<User>>> GetUsersAsync();
+    Task<ServiceResponse<int>> SaveUserAsync(User user);
 }

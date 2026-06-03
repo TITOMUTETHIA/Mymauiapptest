@@ -6,7 +6,7 @@ public interface IAuthenticationService
 {
     User? CurrentUser { get; }
     event Action? UserChanged;
-    Task<bool> LoginAsync(string username);
+    Task<ServiceResponse<bool>> LoginAsync(string username);
     void Logout();
     bool IsInRole(UserRole requiredRole);
 }

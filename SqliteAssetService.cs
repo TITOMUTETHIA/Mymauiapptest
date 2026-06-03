@@ -32,78 +32,75 @@ public class SqliteAssetService : IAssetService
         }
     }
 
-    public async Task<List<Asset>> GetAssetsAsync()
+    public async Task<ServiceResponse<List<Asset>>> GetAssetsAsync()
     {
         try
         {
             await Init();
-            return await _db!.Table<Asset>().ToListAsync();
+            var data = await _db!.Table<Asset>().ToListAsync();
+            return ServiceResponse<List<Asset>>.Ok(data);
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error retrieving assets: {ex.Message}");
-            return new List<Asset>();
+            return ServiceResponse<List<Asset>>.Fail(ex.Message);
         }
     }
 
-    public async Task<int> SaveAssetAsync(Asset asset)
+    public async Task<ServiceResponse<int>> SaveAssetAsync(Asset asset)
     {
         try
         {
             await Init();
-            if (asset.Id != 0)
-                return await _db!.UpdateAsync(asset);
-            else
-                return await _db!.InsertAsync(asset);
+            int result = asset.Id != 0 ? await _db!.UpdateAsync(asset) : await _db!.InsertAsync(asset);
+            return ServiceResponse<int>.Ok(result);
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error saving asset: {ex.Message}");
-            return 0;
+            return ServiceResponse<int>.Fail(ex.Message);
         }
     }
 
-    public async Task DeleteAssetAsync(Asset asset)
+    public async Task<ServiceResponse<bool>> DeleteAssetAsync(Asset asset)
     {
         try
         {
             await Init();
-            await _db!.DeleteAsync(asset);
+            int rows = await _db!.DeleteAsync(asset);
+            return ServiceResponse<bool>.Ok(rows > 0);
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error deleting asset: {ex.Message}");
+            return ServiceResponse<bool>.Fail(ex.Message);
         }
     }
 
-    public async Task<List<User>> GetUsersAsync()
+    public async Task<ServiceResponse<List<User>>> GetUsersAsync()
     {
         try
         {
             await Init();
-            return await _db!.Table<User>().ToListAsync();
+            var data = await _db!.Table<User>().ToListAsync();
+            return ServiceResponse<List<User>>.Ok(data);
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Error retrieving users: {ex.Message}");
-            return new List<User>();
+            return ServiceResponse<List<User>>.Fail(ex.Message);
         }
     }
 
-    public async Task<int> SaveUserAsync(User user)
+    public async Task<ServiceResponse<int>> SaveUserAsync(User user)
     {
         try
         {
             await Init();
-            if (user.Id != 0)
-                return await _db!.UpdateAsync(user);
-            else
-                return await _db!.InsertAsync(user);
+            int result = user.Id != 0 ? await _db!.UpdateAsync(user) : await _db!.InsertAsync(user);
+            return ServiceResponse<int>.Ok(result);
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Error saving user: {ex.Message}");
-            return 0;
+            return ServiceResponse<int>.Fail(ex.Message);
         }
     }
 }

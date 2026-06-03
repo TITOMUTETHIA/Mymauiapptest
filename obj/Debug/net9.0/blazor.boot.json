@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MyMauiApp.Web",
   "resources": {
-    "hash": "sha256-ryqeMRPUZC07tQHhMRVARmch89KIrVC8C1b6bLjSZjw=",
+    "hash": "sha256-zFbKn8nlY4jYOzA+8rjD/t0DFjgMcuYTtOXiTSEJjy0=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.qe23mgxr71.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.flveird317.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -33,6 +33,12 @@
       "SQLitePCLRaw.batteries_v2.csxsbdl1x7.wasm": "SQLitePCLRaw.batteries_v2.wasm",
       "SQLitePCLRaw.core.ojfjr2qko7.wasm": "SQLitePCLRaw.core.wasm",
       "SQLitePCLRaw.provider.e_sqlite3.qeli3rrjnx.wasm": "SQLitePCLRaw.provider.e_sqlite3.wasm",
+      "System.Diagnostics.DiagnosticSource.11ik2udgl4.wasm": "System.Diagnostics.DiagnosticSource.wasm",
+      "System.IO.Pipelines.2aphiopmpd.wasm": "System.IO.Pipelines.wasm",
+      "System.Numerics.Tensors.1o363n5ez5.wasm": "System.Numerics.Tensors.wasm",
+      "System.Text.Encodings.Web.0i66begxk3.wasm": "System.Text.Encodings.Web.wasm",
+      "System.Text.Json.4162z2zhce.wasm": "System.Text.Json.wasm",
+      "System.Threading.Channels.qwc30dy50e.wasm": "System.Threading.Channels.wasm",
       "Microsoft.CSharp.sar5mnx4ym.wasm": "Microsoft.CSharp.wasm",
       "Microsoft.VisualBasic.Core.1ngoyrcttq.wasm": "Microsoft.VisualBasic.Core.wasm",
       "Microsoft.VisualBasic.jh3edekfgl.wasm": "Microsoft.VisualBasic.wasm",
@@ -59,7 +65,6 @@
       "System.Data.pz9wjsdez4.wasm": "System.Data.wasm",
       "System.Diagnostics.Contracts.79j1tsckyb.wasm": "System.Diagnostics.Contracts.wasm",
       "System.Diagnostics.Debug.8zhu26dq2x.wasm": "System.Diagnostics.Debug.wasm",
-      "System.Diagnostics.DiagnosticSource.11ik2udgl4.wasm": "System.Diagnostics.DiagnosticSource.wasm",
       "System.Diagnostics.FileVersionInfo.1lpn2g090o.wasm": "System.Diagnostics.FileVersionInfo.wasm",
       "System.Diagnostics.Process.qixmyxzv3e.wasm": "System.Diagnostics.Process.wasm",
       "System.Diagnostics.StackTrace.5hoeu1sc3n.wasm": "System.Diagnostics.StackTrace.wasm",
@@ -86,7 +91,6 @@
       "System.IO.FileSystem.u7fmjiuu3l.wasm": "System.IO.FileSystem.wasm",
       "System.IO.IsolatedStorage.a8l21mbu15.wasm": "System.IO.IsolatedStorage.wasm",
       "System.IO.MemoryMappedFiles.yp3qt99dna.wasm": "System.IO.MemoryMappedFiles.wasm",
-      "System.IO.Pipelines.2aphiopmpd.wasm": "System.IO.Pipelines.wasm",
       "System.IO.Pipes.AccessControl.5z99x0of9v.wasm": "System.IO.Pipes.AccessControl.wasm",
       "System.IO.Pipes.tbentcenf4.wasm": "System.IO.Pipes.wasm",
       "System.IO.UnmanagedMemoryStream.3li7xx25vl.wasm": "System.IO.UnmanagedMemoryStream.wasm",
@@ -169,10 +173,7 @@
       "System.Text.Encoding.CodePages.a07y1mxckt.wasm": "System.Text.Encoding.CodePages.wasm",
       "System.Text.Encoding.Extensions.408z2s0l3c.wasm": "System.Text.Encoding.Extensions.wasm",
       "System.Text.Encoding.7mm2dq036k.wasm": "System.Text.Encoding.wasm",
-      "System.Text.Encodings.Web.0i66begxk3.wasm": "System.Text.Encodings.Web.wasm",
-      "System.Text.Json.4162z2zhce.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.ttaa4hky04.wasm": "System.Text.RegularExpressions.wasm",
-      "System.Threading.Channels.qwc30dy50e.wasm": "System.Threading.Channels.wasm",
       "System.Threading.Overlapped.igcnxfo39w.wasm": "System.Threading.Overlapped.wasm",
       "System.Threading.Tasks.Dataflow.r4bxzrs9eb.wasm": "System.Threading.Tasks.Dataflow.wasm",
       "System.Threading.Tasks.Extensions.7od9seu1vc.wasm": "System.Threading.Tasks.Extensions.wasm",
@@ -209,8 +210,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "MyMauiApp.Web.ronwxmoc9m.wasm": "MyMauiApp.Web.wasm",
-      "MyMauiApp.Web.cr4mtbf8y5.pdb": "MyMauiApp.Web.pdb"
+      "MyMauiApp.Web.p0czv03vse.wasm": "MyMauiApp.Web.wasm",
+      "MyMauiApp.Web.o10p6wl3xx.pdb": "MyMauiApp.Web.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.l1ds2rhypd.js": "sha256-CU8oL4L0VAwGe3hCyxZDy7keJq9dcsWED0JKqrvlUb4="
@@ -261,6 +262,12 @@
       "SQLitePCLRaw.batteries_v2.csxsbdl1x7.wasm": "sha256-DGkgG5q/j3kl7nNPBUdCgG1jirBhz+zV8ad1NYkCTZs=",
       "SQLitePCLRaw.core.ojfjr2qko7.wasm": "sha256-jEeAdtBvBzfV7/6X7gFDqAhDp0BfFOxuUgahmXzrjvA=",
       "SQLitePCLRaw.provider.e_sqlite3.qeli3rrjnx.wasm": "sha256-4tvppg2p+aYxcjc9gU8A4NgbX/f3cETUvnQ6nwOAkzU=",
+      "System.Diagnostics.DiagnosticSource.11ik2udgl4.wasm": "sha256-ux0iqJyIE9/dHxCE2ZNygF8YITiDHq5QW0K2tgI6CJQ=",
+      "System.IO.Pipelines.2aphiopmpd.wasm": "sha256-OlxI3HvZA4ABLo4Z8vXRruZR1VCA0pZtfSy8QNpM2xc=",
+      "System.Numerics.Tensors.1o363n5ez5.wasm": "sha256-EcfvOio4sfAgGRYTfJMFAg7p0jw0Tn0tOg9vsX84x9U=",
+      "System.Text.Encodings.Web.0i66begxk3.wasm": "sha256-aInaHnVgquQ3HPrf2EinM1MfVrIFBUuC2SH+wBKZV9o=",
+      "System.Text.Json.4162z2zhce.wasm": "sha256-+Lli2Enui/aTZx+PWUaSuH7tFvMY07ad3K7KrVqDZ2Y=",
+      "System.Threading.Channels.qwc30dy50e.wasm": "sha256-5uczFcoRnw/MOwGKr1MXFH0gPjtW8fvDEzDUBnIbQ/w=",
       "Microsoft.CSharp.sar5mnx4ym.wasm": "sha256-jETPvhAU0uuEAnvsJwEp8UJ8j/ZDAxH+fNKiWDuQVlQ=",
       "Microsoft.VisualBasic.Core.1ngoyrcttq.wasm": "sha256-PRhPK9LWbnRf4bfseRfjs5TUKyf18I3yuJrMFBhkXOM=",
       "Microsoft.VisualBasic.jh3edekfgl.wasm": "sha256-2dFsq5r+PBmzSBMyykbVR8Ve9ak44lPsi1IwpKoCjxA=",
@@ -287,7 +294,6 @@
       "System.Data.pz9wjsdez4.wasm": "sha256-a9LZHsBKyUCK5qAeM7QnSkhJb8JkoBOi73sSTCFJIuA=",
       "System.Diagnostics.Contracts.79j1tsckyb.wasm": "sha256-uwQyGBFk7mwO/mFg8+GkKYKMM298a/iT5FSOeqKNP3U=",
       "System.Diagnostics.Debug.8zhu26dq2x.wasm": "sha256-fN+q6iSZE/GeBs2ipfNxKOAo1xuPjZsFgUoM9WeOluA=",
-      "System.Diagnostics.DiagnosticSource.11ik2udgl4.wasm": "sha256-ux0iqJyIE9/dHxCE2ZNygF8YITiDHq5QW0K2tgI6CJQ=",
       "System.Diagnostics.FileVersionInfo.1lpn2g090o.wasm": "sha256-u1whrMlZb/7HJzGpvpjfEHWsxk7EFNwDzFa/I3BXbvU=",
       "System.Diagnostics.Process.qixmyxzv3e.wasm": "sha256-zjYVHXpPH3DCZINJAGxuejX+XBebl4POEotuTdMCrD8=",
       "System.Diagnostics.StackTrace.5hoeu1sc3n.wasm": "sha256-abWFxynWODtbDJ77EXiOE2f6u+MkOTnrzPy+88yWIHw=",
@@ -314,7 +320,6 @@
       "System.IO.FileSystem.u7fmjiuu3l.wasm": "sha256-itG8zhQWTXlpFzQBfxbiEH9hwzZpkiBb3QOkVRVO6gQ=",
       "System.IO.IsolatedStorage.a8l21mbu15.wasm": "sha256-+sBrmldN60kdxOPppsrBTOJXur3T8NyOyCjXhWZM/Vc=",
       "System.IO.MemoryMappedFiles.yp3qt99dna.wasm": "sha256-qpl2AJq+P8/NxzJg2x+iWS9XVgWIgbFXvGjuV5w/660=",
-      "System.IO.Pipelines.2aphiopmpd.wasm": "sha256-OlxI3HvZA4ABLo4Z8vXRruZR1VCA0pZtfSy8QNpM2xc=",
       "System.IO.Pipes.AccessControl.5z99x0of9v.wasm": "sha256-wZvIZb3vs2Q+VaByDWkNBs6CXgFVCHeYi0ZY0rMoh/o=",
       "System.IO.Pipes.tbentcenf4.wasm": "sha256-STUxaiLaIHxUV5ggPmdx/FGHOJXvUw5HJvuMeM+ZtwQ=",
       "System.IO.UnmanagedMemoryStream.3li7xx25vl.wasm": "sha256-156KMqLdFn1GXUUnkw+vDz0tK9JC1AhqQkrEt0dd0mA=",
@@ -396,10 +401,7 @@
       "System.Text.Encoding.CodePages.a07y1mxckt.wasm": "sha256-+iAwC9QkTroS2qAhxUyJhBnx8WaK2nsZbWKemWULy0E=",
       "System.Text.Encoding.Extensions.408z2s0l3c.wasm": "sha256-RIWk+bd0pRh14zXUghwibQ8XOALc/0WwCLp1J9fe5Ic=",
       "System.Text.Encoding.7mm2dq036k.wasm": "sha256-/3OEGn2xN9omam6gdro01ZHbZdooaLyY3q5fyzdCp3g=",
-      "System.Text.Encodings.Web.0i66begxk3.wasm": "sha256-aInaHnVgquQ3HPrf2EinM1MfVrIFBUuC2SH+wBKZV9o=",
-      "System.Text.Json.4162z2zhce.wasm": "sha256-+Lli2Enui/aTZx+PWUaSuH7tFvMY07ad3K7KrVqDZ2Y=",
       "System.Text.RegularExpressions.ttaa4hky04.wasm": "sha256-r4IbAEbjpne6ubXl8/A0ebMNI2jxchpOeh6ZIz7RYJw=",
-      "System.Threading.Channels.qwc30dy50e.wasm": "sha256-5uczFcoRnw/MOwGKr1MXFH0gPjtW8fvDEzDUBnIbQ/w=",
       "System.Threading.Overlapped.igcnxfo39w.wasm": "sha256-0ju7AWK2x84EpLU7VSIc8mL5skIzsSopXa8K+ttIMcA=",
       "System.Threading.Tasks.Dataflow.r4bxzrs9eb.wasm": "sha256-ZfqXMG4Gfgzl3czhIAr7LX0ZCeWulTHCN+PEtTiz7go=",
       "System.Threading.Tasks.Extensions.7od9seu1vc.wasm": "sha256-d2FauYq1cy1R3Sm5CwCXDe4zazeP7p6tlrTkMBmc2U0=",
@@ -428,10 +430,10 @@
       "WindowsBase.p8fley4coh.wasm": "sha256-aRYzLqbGeHVYVMueB/ppfGVKTJ8jPRnWCHEGfFXiSG4=",
       "mscorlib.gr56bjb982.wasm": "sha256-rGm+fePHcRdNKLvNvl2ALv504HZc6ufZZqaXcOLo8HQ=",
       "netstandard.3vbiim3d7s.wasm": "sha256-j+YhS0xT+ZUStadRqdIFX5q3MfD09IJhCcEkJ3y3Kh0=",
-      "MyMauiApp.Web.ronwxmoc9m.wasm": "sha256-65h0W56fIOxFLIH8DTmR6R/fmGMizyr9Y6CQlQGPIL8="
+      "MyMauiApp.Web.p0czv03vse.wasm": "sha256-mZZOmJqljSkOEprH0FliNxKggGu2GX8A9tk/tg3hMEU="
     },
     "pdb": {
-      "MyMauiApp.Web.cr4mtbf8y5.pdb": "sha256-mPpVz+8OoWdPOGYDgLj/p6Jl0TrvGIjH5GDJ1j4l5fw="
+      "MyMauiApp.Web.o10p6wl3xx.pdb": "sha256-hN0zMYFv/w6YZulzJZMI8KqM3yWcnozdu3vnFaBEtgY="
     }
   },
   "cacheBootResources": true,

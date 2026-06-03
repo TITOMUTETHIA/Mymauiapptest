@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cZcUVVfHWkg=",
+  "dgSpecHash": "56HwYaQ1dPo=",
   "success": true,
   "projectFilePath": "C:\\Users\\BIGFISH\\OneDrive\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Web.csproj",
   "expectedPackageFiles": [
@@ -13,23 +13,23 @@
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\9.0.0\\microsoft.aspnetcore.components.webassembly.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\9.0.0\\microsoft.aspnetcore.components.webassembly.devserver.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.metadata\\9.0.0\\microsoft.aspnetcore.metadata.9.0.0.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.ai\\9.5.0\\microsoft.extensions.ai.9.5.0.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.ai.abstractions\\9.5.0\\microsoft.extensions.ai.abstractions.9.5.0.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.5\\microsoft.extensions.caching.abstractions.9.0.5.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.ai\\10.6.0\\microsoft.extensions.ai.10.6.0.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.ai.abstractions\\10.6.0\\microsoft.extensions.ai.abstractions.10.6.0.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\10.0.8\\microsoft.extensions.caching.abstractions.10.0.8.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0\\microsoft.extensions.configuration.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0\\microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.configuration.binder\\9.0.0\\microsoft.extensions.configuration.binder.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\9.0.0\\microsoft.extensions.configuration.fileextensions.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.configuration.json\\9.0.0\\microsoft.extensions.configuration.json.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0\\microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.5\\microsoft.extensions.dependencyinjection.abstractions.9.0.5.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.8\\microsoft.extensions.dependencyinjection.abstractions.10.0.8.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.0\\microsoft.extensions.fileproviders.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\9.0.0\\microsoft.extensions.fileproviders.physical.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\9.0.0\\microsoft.extensions.filesystemglobbing.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.logging\\9.0.0\\microsoft.extensions.logging.9.0.0.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.5\\microsoft.extensions.logging.abstractions.9.0.5.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.8\\microsoft.extensions.logging.abstractions.10.0.8.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.options\\9.0.0\\microsoft.extensions.options.9.0.0.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.5\\microsoft.extensions.primitives.9.0.5.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.8\\microsoft.extensions.primitives.10.0.8.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.jsinterop\\9.0.0\\microsoft.jsinterop.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.jsinterop.webassembly\\9.0.0\\microsoft.jsinterop.webassembly.9.0.0.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.13\\microsoft.net.illink.tasks.9.0.13.nupkg.sha512",
@@ -39,28 +39,17 @@
     "C:\\Users\\BIGFISH\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.2\\sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.5\\system.diagnostics.diagnosticsource.9.0.5.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.8\\system.diagnostics.diagnosticsource.10.0.8.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\system.io.pipelines\\10.0.8\\system.io.pipelines.10.0.8.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\system.text.json\\9.0.5\\system.text.json.9.0.5.nupkg.sha512",
-    "C:\\Users\\BIGFISH\\.nuget\\packages\\system.threading.channels\\9.0.5\\system.threading.channels.9.0.5.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\system.numerics.tensors\\10.0.8\\system.numerics.tensors.10.0.8.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\system.text.encodings.web\\10.0.8\\system.text.encodings.web.10.0.8.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\system.text.json\\10.0.8\\system.text.json.10.0.8.nupkg.sha512",
+    "C:\\Users\\BIGFISH\\.nuget\\packages\\system.threading.channels\\10.0.8\\system.threading.channels.10.0.8.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.14\\microsoft.netcore.app.ref.9.0.14.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.14\\microsoft.netcore.app.runtime.mono.browser-wasm.9.0.14.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.13\\microsoft.windowsdesktop.app.ref.9.0.13.nupkg.sha512",
     "C:\\Users\\BIGFISH\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.13\\microsoft.aspnetcore.app.ref.9.0.13.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "message": "MyMauiApp.Web depends on Microsoft.Extensions.AI (>= 9.0.0) but Microsoft.Extensions.AI 9.0.0 was not found. Microsoft.Extensions.AI 9.5.0 was resolved instead.",
-      "projectPath": "C:\\Users\\BIGFISH\\OneDrive\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Web.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\BIGFISH\\OneDrive\\Documents\\MAUI APP\\MyMauiApp\\MyMauiApp.Web.csproj",
-      "libraryId": "Microsoft.Extensions.AI",
-      "targetGraphs": [
-        "net9.0",
-        "net9.0/browser-wasm"
-      ]
-    }
-  ]
+  "logs": []
 }

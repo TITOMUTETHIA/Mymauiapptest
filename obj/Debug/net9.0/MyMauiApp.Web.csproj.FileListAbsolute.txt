@@ -37,8 +37,6 @@ C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\Microsoft.VisualBasic.jh3edekfgl.wasm
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Win32.Primitives.68t7azmwtb.wasm
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Win32.Registry.9yd4gyoiry.wasm
-C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\MyMauiApp.Web.cr4mtbf8y5.pdb
-C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\MyMauiApp.Web.ronwxmoc9m.wasm
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\SQLite-net.koied9adqa.wasm
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\SQLitePCLRaw.batteries_v2.csxsbdl1x7.wasm
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\SQLitePCLRaw.core.ojfjr2qko7.wasm
@@ -321,7 +319,6 @@ C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Abstractions.pvxa4wu5tg.wasm.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.thhw8cz9wu.wasm.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\Microsoft.JSInterop.WebAssembly.fkdz83fr0b.wasm.gz
-C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\MyMauiApp.Web.ronwxmoc9m.wasm.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\System.Diagnostics.StackTrace.5hoeu1sc3n.wasm.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\System.Security.Cryptography.Primitives.zpq67th4uz.wasm.gz
@@ -395,7 +392,6 @@ C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\System.Runtime.Serialization.vme62yfmpw.wasm.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Abstractions.4ewk3ipqll.wasm.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\System.Xml.XPath.bgw2wkeghx.wasm.gz
-C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\MyMauiApp.Web.cr4mtbf8y5.pdb.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\System.Threading.Tasks.5dhxsv5dln.wasm.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\System.Linq.Parallel.j1y1o8ga68.wasm.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\System.Security.Cryptography.Csp.95zvhzovmu.wasm.gz
@@ -1070,9 +1066,6 @@ C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\compress
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\compressed\dktea9zsiq-{0}-tptq2av103-tptq2av103.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\compressed\2mlc39oe33-{0}-lfu7j35m59-lfu7j35m59.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\compressed\97agqwpgid-{0}-ec9yy67949-ec9yy67949.gz
-C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\compressed\kam30vsvga-{0}-ronwxmoc9m-ronwxmoc9m.gz
-C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\compressed\v449pguxvx-{0}-cr4mtbf8y5-cr4mtbf8y5.gz
-C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\compressed\ssa8k8yw4i-{0}-fsegycipdq-fsegycipdq.gz
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\staticwebassets.development.json
@@ -1083,3 +1076,15 @@ C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\MyMauiAp
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\refint\MyMauiApp.Web.dll
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\MyMauiApp.Web.pdb
 C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\ref\MyMauiApp.Web.dll
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\System.Numerics.Tensors.1o363n5ez5.wasm
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\System.Numerics.Tensors.1o363n5ez5.wasm.gz
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\System.Numerics.Tensors.dll
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\webcil\System.Numerics.Tensors.wasm
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\compressed\odzfg6k7cv-{0}-1o363n5ez5-1o363n5ez5.gz
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\MyMauiApp.Web.o10p6wl3xx.pdb
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\MyMauiApp.Web.p0czv03vse.wasm
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\MyMauiApp.Web.p0czv03vse.wasm.gz
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\bin\Debug\net9.0\wwwroot\_framework\MyMauiApp.Web.o10p6wl3xx.pdb.gz
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\compressed\kam30vsvga-{0}-p0czv03vse-p0czv03vse.gz
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\compressed\v449pguxvx-{0}-o10p6wl3xx-o10p6wl3xx.gz
+C:\Users\BIGFISH\OneDrive\Documents\MAUI APP\MyMauiApp\obj\Debug\net9.0\compressed\ssa8k8yw4i-{0}-3vbtsmibkq-3vbtsmibkq.gz

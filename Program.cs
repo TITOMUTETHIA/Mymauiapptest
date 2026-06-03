@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MyMauiApp.Shared;
 using Microsoft.AspNetCore.Components.Authorization;
 using MyMauiApp.Services;
+using MyMauiApp.ViewModels;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<Routes>("#app");
@@ -18,5 +19,6 @@ builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStat
 builder.Services.AddScoped<IAssetService, WebAssetService>();
 builder.Services.AddAuthorizationCore();
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+builder.Services.AddScoped<MainViewModel>();
 
 await builder.Build().RunAsync();
