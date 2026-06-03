@@ -20,23 +20,43 @@ public class MainViewModel
 
     public async Task LoadAssetsAsync()
     {
-        var data = await _assetService.GetAssetsAsync();
-        Assets.Clear();
-        foreach (var item in data)
-            Assets.Add(item);
-
-        NotifyStateChanged();
+        try
+        {
+            var data = await _assetService.GetAssetsAsync();
+            Assets.Clear();
+            foreach (var item in data)
+                Assets.Add(item);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Failed to load assets: {ex.Message}");
+        }
+        finally
+        {
+            NotifyStateChanged();
+        }
     }
 
     public async Task AnalyzeAssetAsync(Asset asset)
     {
         if (asset == null || string.IsNullOrWhiteSpace(asset.Description)) return;
 
-        asset.AiAnalysis = "Generating analysis...";
-        NotifyStateChanged();
+        try
+        {
+            asset.AiAnalysis = "Generating analysis...";
+            NotifyStateChanged();
 
-        asset.AiAnalysis = await _aiService.AnalyzeAssetAsync(asset.Description);
-        NotifyStateChanged();
+            asset.AiAnalysis = await _aiService.AnalyzeAssetAsync(asset.Description);
+        }
+        catch (Exception ex)
+        {
+            asset.AiAnalysis = "Analysis unavailable.";
+            Console.WriteLine($"AI Analysis error: {ex.Message}");
+        }
+        finally
+        {
+            NotifyStateChanged();
+        }
     }
 
     public void NotifyStateChanged() => OnStateChanged?.Invoke();

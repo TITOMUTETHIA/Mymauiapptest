@@ -15,16 +15,24 @@ public class AuthenticationService : IAuthenticationService
 
     public async Task<bool> LoginAsync(string username)
     {
-        var users = await _assetService.GetUsersAsync();
-        var user = users.FirstOrDefault(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
-        
-        if (user != null)
+        try
         {
-            CurrentUser = user;
-            UserChanged?.Invoke();
-            return true;
+            var users = await _assetService.GetUsersAsync();
+            var user = users.FirstOrDefault(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
+            
+            if (user != null)
+            {
+                CurrentUser = user;
+                UserChanged?.Invoke();
+                return true;
+            }
+            return false;
         }
-        return false;
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Login error: {ex.Message}");
+            return false;
+        }
     }
 
     public void Logout()

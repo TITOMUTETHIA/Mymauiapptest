@@ -13,9 +13,16 @@ public class AiService : IAiService
 
     public async Task<string> AnalyzeAssetAsync(string assetDescription)
     {
-        var response = await _chatClient.GetResponseAsync(
-            $"Analyze this asset and provide a brief summary: {assetDescription}");
-        
-        return response.Message.Text ?? "No analysis available.";
+        try
+        {
+            var response = await _chatClient.GetResponseAsync(
+                $"Analyze this asset and provide a brief summary: {assetDescription}");
+            
+            return response.Message.Text ?? "No analysis available.";
+        }
+        catch (Exception ex)
+        {
+            return $"Error during analysis: {ex.Message}";
+        }
     }
 }

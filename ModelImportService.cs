@@ -32,18 +32,22 @@ public class ModelImportService
 
             if (result == null) return false;
 
-            // 3. Ensure a dedicated folder exists in AppDataDirectory
-            string modelsDir = Path.Combine(FileSystem.AppDataDirectory, "Models");
-            if (!Directory.Exists(modelsDir)) Directory.CreateDirectory(modelsDir);
-
-            // 4. Copy file to local storage (prevent overwriting with unique names if needed)
             string uniqueFileName = $"{Guid.NewGuid()}_{result.FileName}";
-            string destinationPath = Path.Combine(modelsDir, uniqueFileName);
-            using (var sourceStream = await result.OpenReadAsync())
-            using (var destStream = File.Create(destinationPath))
+            string destinationPath = uniqueFileName;
+
+            // Only attempt local file IO if not on WebAssembly
+            if (DeviceInfo.Current.Platform != DevicePlatform.Unknown) 
             {
+                string modelsDir = Path.Combine(FileSystem.AppDataDirectory, "Models");
+                if (!Directory.Exists(modelsDir)) Directory.CreateDirectory(modelsDir);
+                destinationPath = Path.Combine(modelsDir, uniqueFileName);
+                
+                using var sourceStream = await result.OpenReadAsync();
+                using var destStream = File.Create(destinationPath);
                 await sourceStream.CopyToAsync(destStream);
             }
+            // Note: For Web, you'd typically handle the stream differently (e.g., Upload to Server)
+
 
             // 5. Save metadata to SQLite
             var asset = new Asset
