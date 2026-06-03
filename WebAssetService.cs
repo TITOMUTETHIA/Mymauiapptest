@@ -68,7 +68,7 @@ public class WebAssetService : IAssetService
             return 1;
         });
 
-        return result ?? 0;
+        return result;
     }
 
     public async Task DeleteAssetAsync(Asset asset)
@@ -112,6 +112,6 @@ public class WebAssetService : IAssetService
             return 1;
         });
 
-        return result ?? 0;
+        return result;
     }
 }

@@ -18,7 +18,7 @@ public class AiService : IAiService
             var response = await _chatClient.GetResponseAsync(
                 $"Analyze this asset and provide a brief summary: {assetDescription}");
             
-            return response.Message.Text ?? "No analysis available.";
+            return response.Text ?? "No analysis available.";
         }
         catch (Exception ex)
         {

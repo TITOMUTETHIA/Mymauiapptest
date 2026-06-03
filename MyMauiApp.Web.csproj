@@ -21,6 +21,7 @@
     <Compile Remove="MauiProgram.cs" />
     <Compile Remove="MauiCameraService.cs" />
     <Compile Remove="MauiToastService.cs" />
+    <Compile Remove="ModelImportService.cs" />
     <Compile Remove="SqliteAssetService.cs" />
     <Compile Remove="MainPage.xaml.cs" />
     <Compile Remove="App.xaml.cs" />
