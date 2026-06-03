@@ -9,7 +9,26 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.0" PrivateAssets="all" />
-    <ProjectReference Include="..\MyMauiApp.Shared.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.AI" Version="9.0.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Exclude MAUI-specific files from the Web build to avoid compilation errors -->
+    <Compile Remove="Platforms\**" />
+    <Compile Remove="Resources\**" />
+    <Compile Remove="MauiProgram.cs" />
+    <Compile Remove="MauiCameraService.cs" />
+    <Compile Remove="MauiToastService.cs" />
+    <Compile Remove="SqliteAssetService.cs" />
+    <Compile Remove="MainPage.xaml.cs" />
+    <Compile Remove="App.xaml.cs" />
+    <Compile Remove="AppShell.xaml.cs" />
+    <Compile Remove="AboutPage.xaml.cs" />
+    <Compile Remove="ContactPage.xaml.cs" />
+    <!-- Exclude XAML files which are not supported in Blazor WebAssembly projects -->
+    <None Remove="**\*.xaml" />
   </ItemGroup>
 
 </Project>
