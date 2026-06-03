@@ -1,0 +1,55 @@
+@page "/assets"
+@using MyMauiApp.Models
+@using MyMauiApp.ViewModels
+@inject MainViewModel ViewModel
+@implements IDisposable
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3>Asset Inventory</h3>
+        <button class="btn btn-primary" @onclick="ViewModel.LoadAssetsAsync">
+            Refresh List
+        </button>
+    </div>
+
+    @if (ViewModel.Assets.Count == 0)
+    {
+        <div class="alert alert-info">No assets found. Ensure your database is initialized.</div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var asset in ViewModel.Assets)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">@asset.Name</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">@asset.Category</h6>
+                            <p class="card-text">@asset.Description</p>
+                            
+                            <button class="btn btn-sm btn-outline-secondary mb-3" 
+                                    @onclick="() => ViewModel.AnalyzeAssetAsync(asset)"
+                                    disabled="@(asset.AiAnalysis == "Generating analysis...")">
+                                ✨ AI Analysis
+                            </button>
+
+                            @if (!string.IsNullOrEmpty(asset.AiAnalysis))
+                            {
+                                <div class="p-2 bg-light border rounded small">
+                                    <strong>AI Insights:</strong>
+                                    <p class="mb-0">@asset.AiAnalysis</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    protected override void OnInitialized() => ViewModel.OnStateChanged += StateHasChanged;
+    public void Dispose() => ViewModel.OnStateChanged -= StateHasChanged;
+}

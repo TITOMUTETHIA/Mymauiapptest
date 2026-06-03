@@ -5,6 +5,7 @@ using MyMauiApp.Services;
 using Microsoft.AspNetCore.Components.Authorization;
 using MyMauiApp.ViewModels;
 using CommunityToolkit.Maui;
+using Microsoft.Extensions.AI;
 
 namespace MyMauiApp;
 
@@ -28,6 +29,12 @@ public static class MauiProgram
 		builder.Services.AddSingleton<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
 		builder.Services.AddAuthorizationCore(); // Required for AuthorizeRouteView
 		builder.Services.AddSingleton<IAuthenticationService, AuthenticationService>();
+
+		// AI Integration: Using Microsoft.Extensions.AI abstractions
+		// Note: Replace with actual OpenAIClient or OllamaChatClient as needed
+		builder.Services.AddChatClient(new SampleChatClient()); 
+		
+		builder.Services.AddSingleton<IAiService, AiService>();
 		
 		// Register Data Services and ViewModels
 		builder.Services.AddSingleton<IAssetService, SqliteAssetService>();
