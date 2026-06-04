@@ -3,8 +3,7 @@
 	<PropertyGroup>
 		<!-- TargetFrameworks are defined in Directory.Build.props for consistency -->
 		<TargetFramework />
-		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net9.0-windows10.0.19041.0</TargetFrameworks>
+		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst;net9.0-windows10.0.19041.0</TargetFrameworks>
 
 		<!-- Runtime Identifiers for Windows to resolve NETSDK1047 -->
 		<RuntimeIdentifiers Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">win10-x64;win10-x86;win10-arm64</RuntimeIdentifiers>
