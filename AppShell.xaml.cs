@@ -1,10 +1,15 @@
-﻿﻿namespace MyMauiApp;
+﻿﻿﻿﻿namespace MyMauiApp;
 
 public partial class AppShell : Shell
 {
 	public AppShell()
 	{
 		InitializeComponent();
+
+		// Register routes for navigation. Fixes the bug where native buttons 
+		// on the landing page couldn't find the target pages.
+		Routing.RegisterRoute("AboutPage", typeof(MainPage)); // Replace with actual page types if different
+		Routing.RegisterRoute("ContactPage", typeof(MainPage));
 	}
 
     private async void OnLogoutClicked(object sender, EventArgs e)

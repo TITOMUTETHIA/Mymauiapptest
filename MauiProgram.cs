@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿using Microsoft.Extensions.Logging;
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Components.WebView.Maui;
 using MyMauiApp.Shared;
 using MyMauiApp.Services;
@@ -26,19 +26,28 @@ public static class MauiProgram
 		builder.Services.AddMauiBlazorWebView();
 		builder.Services.AddSingleton<ICameraService, MauiCameraService>();
 		builder.Services.AddSingleton<IToastService, MauiToastService>();
+		builder.Services.AddCascadingAuthenticationState(); // Fixes auth visibility on the landing page
 		builder.Services.AddSingleton<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
 		builder.Services.AddAuthorizationCore(); // Required for AuthorizeRouteView
 		builder.Services.AddSingleton<IAuthenticationService, AuthenticationService>();
 
 		// AI Integration: Using Microsoft.Extensions.AI abstractions
-		// Note: Replace with actual OpenAIClient or OllamaChatClient as needed
-		builder.Services.AddChatClient(new SampleChatClient()); 
+		// Improved registration to ensure singleton behavior
+		builder.Services.AddChatClient(sp => new SampleChatClient()); 
 		
 		builder.Services.AddSingleton<IAiService, AiService>();
 		
 		// Register Data Services and ViewModels
 		builder.Services.AddSingleton<IAssetService, SqliteAssetService>();
 		builder.Services.AddSingleton<MainViewModel>();
+
+#if WINDOWS
+        // Windows-specific configuration, like window sizing or specialized desktop services
+        builder.Logging.AddFilter("Microsoft.UI.Xaml", LogLevel.Warning);
+#elif ANDROID
+        // Android-specific configuration, such as setting up specific Intent filters or permissions
+        builder.Logging.AddFilter("Android.Graphics", LogLevel.Debug);
+#endif
 
 		// Register Pages for DI
 		builder.Services.AddTransient<MainPage>();

@@ -6,7 +6,7 @@
 		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst;net9.0-windows10.0.19041.0</TargetFrameworks>
 
 		<!-- Runtime Identifiers for Windows to resolve NETSDK1047 -->
-		<RuntimeIdentifiers Condition="$(TargetFramework.Contains('-windows')) or '$(TargetFramework)' == ''">win10-x64;win10-x86;win10-arm64</RuntimeIdentifiers>
+		<RuntimeIdentifiers Condition="$(TargetFramework.Contains('-windows')) or $(TargetFrameworks.Contains('windows'))">win10-x64;win10-x86;win10-arm64</RuntimeIdentifiers>
 
 		<!-- Note for MacCatalyst:
 		The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
