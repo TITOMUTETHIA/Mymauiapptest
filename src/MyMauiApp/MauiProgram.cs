@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Components.WebView.Maui;
 using MyMauiApp.Shared.Services; // Updated namespace for shared services
 using MyMauiApp.Services;
-
+// It's good practice to keep using statements sorted alphabetically for consistency.
 namespace MyMauiApp;
 
 public static class MauiProgram
@@ -19,8 +19,8 @@ public static class MauiProgram
 			});
 
 		builder.Services.AddMauiBlazorWebView();
-		builder.Services.AddSingleton<ICameraService, MauiCameraService>();
-		builder.Services.AddSingleton<ICartService, CartService>();
+		builder.Services.AddSingleton<ICameraService, MauiCameraService>(); // Uses MyMauiApp.Services
+		builder.Services.AddSingleton<ICartService, CartService>();         // Uses MyMauiApp.Shared.Services
 
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
