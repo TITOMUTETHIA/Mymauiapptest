@@ -1,4 +1,4 @@
-﻿﻿﻿using Microsoft.Extensions.Logging;
+﻿﻿using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Components.WebView.Maui;
 using MyMauiApp.Shared.Services; // Updated namespace for shared services
 
@@ -18,8 +18,8 @@ public static class MauiProgram
 			});
 
 		builder.Services.AddMauiBlazorWebView();
-		builder.Services.AddSingleton<ICameraService, Services.MauiCameraService>(); // Updated to MyMauiApp.Services.MauiCameraService
-		builder.Services.AddSingleton<ICartService, CartService>(); // CartService is now in MyMauiApp.Shared.Services
+		builder.Services.AddSingleton<ICameraService, MyMauiApp.Services.MauiCameraService>();
+		builder.Services.AddSingleton<ICartService, MyMauiApp.Shared.Services.CartService>();
 
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
